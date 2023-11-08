@@ -1,12 +1,12 @@
 import {Text, View, Image, TouchableOpacity} from 'react-native';
 
-import mobxCounterSlice from '../mobx/mobxCounterSlice';
+import mobxCounterSlice from '../../../mobx/mobxCounterSlice';
 import {observer} from 'mobx-react-lite';
 
 import useStyleCounter from './useStyleCounter';
 
 const Counter = ({color}) => {
-  const styles = useStyleCounter({color: 'red'});
+  const styles = useStyleCounter({color: color});
   const {count, increment, decrement} = mobxCounterSlice;
 
   return (
