@@ -10,9 +10,8 @@ function useStyleLayout ({color}) {
             paddingBottom: 24,
            
         },
-        
+
         cont: {
-            alignItems: 'center',
             flex: 1,
             justifyContent: 'space-between'
         }
