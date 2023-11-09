@@ -7,7 +7,14 @@ function useStyleLayout ({color}) {
             width: Dimensions.get('window').width,
             height: Dimensions.get('window').height,
             justifyContent: 'space-between',
-            paddingBottom: 25
+            paddingBottom: 24,
+           
+        },
+        
+        cont: {
+            alignItems: 'center',
+            flex: 1,
+            justifyContent: 'space-between'
         }
         
     });
