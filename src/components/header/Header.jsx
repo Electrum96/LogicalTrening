@@ -1,15 +1,17 @@
-import {Text, View, Image} from 'react-native';
+import {Text, View, TouchableOpacity} from 'react-native';
 
 import useStyleHeader from './useStyleHeader';
 
-const Header = () => {
-
-const styles = useStyleHeader();
-    return (
-        <View style={styles. headerWrapper}>
-            <Text style={styles.title}>Header</Text>
-        </View>
-    )
-}
+const Header = ({navigation,title}) => {
+  const styles = useStyleHeader();
+  return (
+    <View style={styles.headerWrapper}>
+      <TouchableOpacity onPress={() => navigation.goBack('')}>
+        <Text style={styles.btn}>Назад</Text>
+      </TouchableOpacity>
+      <Text style={styles.title}>{title}</Text>
+    </View>
+  );
+};
 
 export default Header;

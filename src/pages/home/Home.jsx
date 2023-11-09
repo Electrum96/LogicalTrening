@@ -4,11 +4,11 @@ import useStyleHome from './useStyleHome';
 
 import Layout from '../../components/layout/Layout';
 
-const Home = () => {
+const Home = ({navigation}) => {
 
 const styles = useStyleHome();
     return (
-    <Layout>
+    <Layout navigation={navigation} title={'Home'}>
         <View>
             <Text>Home</Text>
         </View>

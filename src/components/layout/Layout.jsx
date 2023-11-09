@@ -4,11 +4,11 @@ import useStyleLayout from './useStyleLayout';
 import Header from '../header/Header';
 import Navigation from '../navigation/Navigation';
 
-const Layout = ({children}) => {
+const Layout = ({ navigation, title,children}) => {
   const styles = useStyleLayout({color: 'yellow'});
   return (
     <View style={styles.layoutWrap}>
-      <Header />
+      <Header navigation={navigation} title={title}/>
       <View style={styles.cont}>{children}</View>
       <Navigation />
     </View>

@@ -10,6 +10,9 @@ function useStyleHeader () {
         title: {
             color: 'white',
             textAlign: 'center'
+        },
+        btn: {
+            color:'white' 
         }
     });
 
