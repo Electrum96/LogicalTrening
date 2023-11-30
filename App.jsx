@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './src/pages/home/Home';
 import CounterPage from './src/pages/counter/CounterPage';
+import RootHome from './src/pages/home/root/RootHome';
 
 const Stack = createNativeStackNavigator()
 
@@ -12,15 +13,11 @@ const App = () => {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
-            name="Home"
-            component={Home}
+            name="RootHome"
+            component={RootHome}
             options={{headerShown: false}}
           />
-             <Stack.Screen
-            name="Counter"
-            component={CounterPage}
-            options={{headerShown: false}}
-          />
+            
         </Stack.Navigator>
       </NavigationContainer>
     );

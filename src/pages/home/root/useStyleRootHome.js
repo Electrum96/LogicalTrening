@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-function useStyleHome () {
+function useStyleRootHome () {
     const styles = StyleSheet.create({
         
     });
@@ -8,4 +8,4 @@ function useStyleHome () {
     return styles;
 }
 
-export default useStyleHome;
+export default useStyleRootHome;
