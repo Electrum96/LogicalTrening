@@ -2,16 +2,17 @@ import RootCart from '../pages/cart/root/RootCart';
 import RootHome from '../pages/home/root/RootHome';
 
 const ROUTES_CONFIG = {
+  main: {
+    id: 0,
+    name: 'RootHome',
+    component: RootHome,
+    options: {headerShown: false},
+  },
+
   cart: {
     id: 2,
     name: 'Cart',
     component: RootCart,
-    options: {headerShown: false},
-  },
-  main: {
-    id: 1,
-    name: 'RootHome',
-    component: RootHome,
     options: {headerShown: false},
   },
 };
