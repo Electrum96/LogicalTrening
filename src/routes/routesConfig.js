@@ -5,6 +5,8 @@ const ROUTES_CONFIG = {
   main: {
     id: 0,
     name: 'RootHome',
+    title: 'Главная',
+    isShow: true,
     component: RootHome,
     options: {headerShown: false},
   },
@@ -12,6 +14,8 @@ const ROUTES_CONFIG = {
   cart: {
     id: 2,
     name: 'Cart',
+    title: 'Меню',
+    isShow: true,
     component: RootCart,
     options: {headerShown: false},
   },
@@ -20,3 +24,4 @@ const ROUTES_CONFIG = {
 export const ARRAY_ROUTES = Object.entries(ROUTES_CONFIG).map(
   ([key, object]) => object,
 );
+export const ARRAY_BUTTONS = ARRAY_ROUTES.filter((route) => route.isShow);
