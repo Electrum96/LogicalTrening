@@ -1,7 +1,7 @@
 import RootCart from '../pages/cart/root/RootCart';
 import RootHome from '../pages/home/root/RootHome';
 
-const ROUTES_CONFIG = {
+export const ROUTES_CONFIG = {
   main: {
     id: 0,
     name: 'RootHome',
