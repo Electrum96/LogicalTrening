@@ -4,12 +4,12 @@ import useStyleButtonIcon from './useStyleButtonIcon';
 
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
-const ButtonIcon = ({color, icon, onPress}) => {
+const ButtonIcon = ({color, icon, onPress, size = 30}) => {
 
 const styles = useStyleButtonIcon();
     return (
         <TouchableOpacity style={styles.btn} onPress={onPress}>
-              <FontAwesomeIcon icon={icon} size={30} color={color}/>
+              <FontAwesomeIcon icon={icon} size={size} color={color}/>
         </TouchableOpacity>
     )
 }

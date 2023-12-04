@@ -6,7 +6,9 @@ function useStyleButtonIcon () {
         btn:{
             borderRadius: 10,
             backgroundColor: COLORS.accentBg,
-            padding: 5
+            padding: 5,
+            alignItems: 'center',
+            justifyContent: 'center'
             
         }
         

@@ -3,12 +3,15 @@ import {Text, View, Image} from 'react-native';
 import useStyleRootBasket from './useStyleRootBasket';
 import LayoutMain from '../../../components/layoutMain/LayoutMain';
 
-const RootBasket = () => {
+import BasketItem from '../basketItem/BasketItem';
 
-const styles = useStyleRootBasket();
-    return (
-        <LayoutMain></LayoutMain>
-    )
-}
+const RootBasket = () => {
+  const styles = useStyleRootBasket();
+  return (
+    <LayoutMain>
+      <BasketItem title={'Titleeeeeeeeeeeeeeee'} count={10} price={100} />
+    </LayoutMain>
+  );
+};
 
 export default RootBasket;
