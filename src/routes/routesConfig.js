@@ -15,7 +15,7 @@ export const ROUTES_CONFIG = {
   cart: {
     id: 2,
     name: 'Cart',
-    title: 'Меню',
+    title: 'Меню продуктов',
     isShow: true,
     component: RootCart,
     options: {headerShown: false},
