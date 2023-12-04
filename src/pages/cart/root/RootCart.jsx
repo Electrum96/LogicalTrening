@@ -6,7 +6,7 @@ import LayoutMain from '../../../components/layoutMain/LayoutMain';
 const RootCart = () => {
   const styles = useStyleRootCart();
   return (
-    <LayoutMain>
+    <LayoutMain title={'Продукты'}>
       <View>
         <Text>RootCart</Text>
       </View>

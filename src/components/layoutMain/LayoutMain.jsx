@@ -4,14 +4,14 @@ import useStyleLayoutMain from './useStyleLayoutMain';
 import Container from '../container/Container';
 import Header from '../header/Header';
 
-const LayoutMain = ({children}) => {
+const LayoutMain = ({children, title}) => {
 
 const styles = useStyleLayoutMain();
     return (
         <View style={styles.layout}>
             <View style={styles.header}>
             <Container>
-               <Header/>
+               <Header title={title}/>
             </Container>
             </View>
             <View style={styles.main}>

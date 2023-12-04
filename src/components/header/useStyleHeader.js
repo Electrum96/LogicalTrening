@@ -5,7 +5,8 @@ function useStyleHeader () {
         headerWrap:{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            paddingVertical: 10
+            paddingVertical: 10,
+            alignItems: 'center'
         }
         
     });

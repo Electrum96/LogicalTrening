@@ -1,3 +1,4 @@
+import RootBasket from '../pages/basket/rootBasket/RootBasket';
 import RootCart from '../pages/cart/root/RootCart';
 import RootHome from '../pages/home/root/RootHome';
 
@@ -17,6 +18,15 @@ export const ROUTES_CONFIG = {
     title: 'Меню',
     isShow: true,
     component: RootCart,
+    options: {headerShown: false},
+  },
+
+  basket: {
+    id: 3,
+    name: 'Basket',
+    title: 'Корзина',
+    isShow: true,
+    component: RootBasket,
     options: {headerShown: false},
   },
 };
