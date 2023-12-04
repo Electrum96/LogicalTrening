@@ -2,6 +2,7 @@ import {Text, View, Image} from 'react-native';
 
 import useStyleLayoutMain from './useStyleLayoutMain';
 import Container from '../container/Container';
+import Header from '../header/Header';
 
 const LayoutMain = ({children}) => {
 
@@ -10,7 +11,7 @@ const styles = useStyleLayoutMain();
         <View style={styles.layout}>
             <View style={styles.header}>
             <Container>
-                <Text>text</Text>
+               <Header/>
             </Container>
             </View>
             <View style={styles.main}>
