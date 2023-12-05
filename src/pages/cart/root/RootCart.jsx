@@ -2,6 +2,7 @@ import {Text, View, Image} from 'react-native';
 
 import useStyleRootCart from './useStyleRootCart';
 import LayoutMain from '../../../components/layoutMain/LayoutMain';
+import ProductList from '../productList/ProductList';
 
 const RootCart = () => {
   const styles = useStyleRootCart();
@@ -9,6 +10,7 @@ const RootCart = () => {
     <LayoutMain title={'Продукты'}>
       <View>
         <Text>RootCart</Text>
+        <ProductList/>
       </View>
     </LayoutMain>
   );

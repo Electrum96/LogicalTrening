@@ -9,7 +9,7 @@ const BasketItem = ({count, title, price}) => {
   const styles = useStyleBasketItem();
   return (
     <View style={styles.wrapper}>
-      <Image source={require('../../../assets/images/dev/Azian.png')} style={styles.image}/>
+      <Image source={require('../../../assets/images/dev/DevImage.png')} style={styles.image}/>
       <View style={styles.informWrap}>
       <Text style={styles.title} numberOfLines={2}>{title}</Text>
       <Text style={styles.price}>{price}</Text>
