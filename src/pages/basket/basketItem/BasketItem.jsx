@@ -5,7 +5,11 @@ import useStyleBasketItem from './useStyleBasketItem';
 import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 import Counter from '../../../components/counter/Counter';
 
-const BasketItem = ({count, title, price}) => {
+import productStore from '../../../store/productStore';
+
+const BasketItem = ({count, title, price, id}) => {
+  
+  const {increment, decrement, remove} = productStore;
   const styles = useStyleBasketItem();
   return (
     <View style={styles.wrapper}>
@@ -15,8 +19,8 @@ const BasketItem = ({count, title, price}) => {
       <Text style={styles.price}>{price}</Text>
       </View>
       <View style={styles.btnWrap}>
-        <ButtonIcon icon={'trash'} size={20}/>
-        <Counter count={count}/>
+        <ButtonIcon icon={'trash'} size={20} onPress={() => remove(id)}/>
+        <Counter count={count} increment={() => increment(id)} decrement={() => decrement(id)}/>
       </View>
     </View>
   );

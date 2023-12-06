@@ -8,6 +8,8 @@ import List from '../../../components/list/List';
 
 import productStore from '../../../store/productStore';
 
+import {observer} from 'mobx-react-lite';
+
 const RootBasket = () => {
   const {basketList} = productStore;
 
@@ -21,4 +23,4 @@ const RootBasket = () => {
   );
 };
 
-export default RootBasket;
+export default observer(RootBasket);

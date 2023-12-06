@@ -8,6 +8,8 @@ import List from '../../../components/list/List';
 import productStore from '../../../store/productStore';
 import ProductItem from '../productItem/ProductItem';
 
+import {observer} from 'mobx-react-lite';
+
 const RootCart = () => {
   const {productList} = productStore;
   const styles = useStyleRootCart();
@@ -21,4 +23,4 @@ const RootCart = () => {
   );
 };
 
-export default RootCart;
+export default observer(RootCart);
