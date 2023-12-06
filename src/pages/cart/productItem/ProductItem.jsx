@@ -2,16 +2,24 @@ import {Text, View, Image} from 'react-native';
 import {observer} from 'mobx-react-lite';
 
 import useStyleProductItem from './useStyleProductItem';
+import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 
 const ProductItem = ({title, image, desc, price}) => {
 
 const styles = useStyleProductItem();
     return (
         <View style={styles.wrapper}>
-            <Image source={image}/>
-            <Text >{title}</Text>
-            <Text>{desc}</Text>
-            <Text>{price}</Text>
+            <Image style={styles.image} source={image}/>
+            <View style={styles.box}>
+            <View style={styles.contentWrap}>
+            <Text style={styles.title} numberOfLines={1}>{title}</Text>
+            <Text style={styles.desc} numberOfLines={3}>{desc}</Text>
+            </View>
+            <View style={styles.footer}>
+            <Text style={styles.price}>{price}</Text>
+            <ButtonIcon icon={'plus'}/>
+            </View>
+            </View>
         </View>
     )
 }

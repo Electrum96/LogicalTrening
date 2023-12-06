@@ -1,7 +1,7 @@
 const PRODUCT_DATA = [
   {
     title: 'BBQ',
-    desc: 'Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.',
+    desc: 'Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.Pihviä, juustoa, tomaattia, suolakurkkua, salaattia, pekonia, grillikastiketta.',
     price: 15,
     image:  require ('../images/dev/DevImage.png'),
     weight: 250,
@@ -16,7 +16,7 @@ const PRODUCT_DATA = [
     classTab: 'Breakfast',
   },
   {
-    title: 'Cheeseburger',
+    title: 'Cheeseburger Pihviä, juustoa, tomaattia, suolakurkkua, salaatinlehteä. ',
     desc: 'Pihviä, juustoa, tomaattia, suolakurkkua, salaatinlehteä.',
     price: 22,
     image:  require ('../images/dev/DevImage.png'),
@@ -25,7 +25,7 @@ const PRODUCT_DATA = [
   },
   {
     title: 'Chicken BBQ',
-    desc: 'Kanafileetä, juustoa, tomaattia, pikkelöityä kurkkua, salaattia, pekonia, grillikastiketta.',
+    desc: 'Kanafileetä.',
     price: 35,
     image:  require ('../images/dev/DevImage.png'),
     weight: 350,
