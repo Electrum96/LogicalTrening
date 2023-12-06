@@ -10,12 +10,12 @@ const styles = useStyleLayoutMain();
     return (
         <View style={styles.layout}>
             <View style={styles.header}>
-            <Container>
+            <Container >
                <Header title={title}/>
             </Container>
             </View>
             <View style={styles.main}>
-               <Container>{children}</Container>
+               <Container full={true}>{children}</Container>
             </View>
         </View>
     )

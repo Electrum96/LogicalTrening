@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
 
-function useStyleContainer () {
+function useStyleContainer (full) {
     const styles = StyleSheet.create({
         container:{
             marginHorizontal: 20,
-            backgroundColor: '#00000090'
+            flex: full ? 1 : 0
         }
         
     });

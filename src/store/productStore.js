@@ -9,7 +9,9 @@ class ProductStore {
 
     productListAll = PRODUCT_DATA_ARRAY;
     
-    get productList() { return this.productListAll.filter((product) => true ) }
+    get productList() { return this.productListAll.filter((product) => true ) };
+    
+    get basketList() {return this.productListAll.filter((product) => product.inBasket )};
 
 
 

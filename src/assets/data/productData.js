@@ -199,7 +199,7 @@ export const PRODUCT_DATA_ARRAY = PRODUCT_DATA.map(el => {
   return {
     ...el,
     count: 1,
-    inBasket: false,
+    inBasket: true,
     id: getID(),
   };
 });
