@@ -2,6 +2,9 @@ import {StyleSheet} from 'react-native';
 
 function useStyleRootHome () {
     const styles = StyleSheet.create({
+        listWrap:{
+            gap: 10
+        }
         
     });
 

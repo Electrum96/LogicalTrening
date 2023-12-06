@@ -7,7 +7,7 @@ export const ROUTES_CONFIG = {
     id: 0,
     name: 'RootHome',
     title: 'Главная',
-    isShow: true,
+    isShow: false,
     component: RootHome,
     options: {headerShown: false},
   },
