@@ -11,14 +11,18 @@ import productStore from '../../../store/productStore';
 import {observer} from 'mobx-react-lite';
 
 const RootBasket = () => {
-  const {basketList} = productStore;
+  const {basketList, totalPrice} = productStore;
 
   const styles = useStyleRootBasket();
   return (
     <LayoutMain>
       <ScrollView contentContainerStyle={styles.list}>
-        <List data={basketList} Component={BasketItem} />
-      </ScrollView>
+        <List data={basketList} Component={BasketItem}/>
+       </ScrollView>
+       <View style={styles.footer}>
+       <Text style={styles.title}>Итого</Text>
+       <Text style={styles.count}>{totalPrice}</Text>
+       </View>
     </LayoutMain>
   );
 };

@@ -16,7 +16,7 @@ const BasketItem = ({count, title, price, id}) => {
       <Image source={require('../../../assets/images/dev/DevImage.png')} style={styles.image}/>
       <View style={styles.informWrap}>
       <Text style={styles.title} numberOfLines={2}>{title}</Text>
-      <Text style={styles.price}>{price}</Text>
+      <Text style={styles.price}>{price*count}</Text>
       </View>
       <View style={styles.btnWrap}>
         <ButtonIcon icon={'trash'} size={20} onPress={() => remove(id)}/>

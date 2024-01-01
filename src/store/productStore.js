@@ -37,7 +37,13 @@ class ProductStore {
     
     get productList() { return this.productListAll.filter((product) => true ) };
     
-    get basketList() {return this.productListAll.filter((product) => product.inBasket )};
+    get basketList() {
+    let basketList = this.productListAll.filter((product) => product.inBasket)
+    return basketList  };
+
+    get totalPrice() {return this.basketList.reduce((acc, product) => acc + product.count * product.price ,0)}
+
+
 
 
 
