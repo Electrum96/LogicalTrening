@@ -7,6 +7,10 @@ function useStyleRootCart () {
             flexWrap: 'wrap',
             paddingVertical: 20,
             gap: 20
+        },
+        buttonsListWrap:{
+            paddingVertical: 10,
+            gap: 20
         }
         
     });

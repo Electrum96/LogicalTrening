@@ -9,6 +9,8 @@ import productStore from '../../../store/productStore';
 import ProductItem from '../productItem/ProductItem';
 
 import {observer} from 'mobx-react-lite';
+import filterButtons from '../../../assets/data/filterButtons';
+import FilterButton from '../filterButton/FilterButton';
 
 const RootCart = () => {
   const {productList} = productStore;
@@ -16,6 +18,9 @@ const RootCart = () => {
   return (
     <LayoutMain title={'Продукты'}>
       <Text>RootCart</Text>
+      <ScrollView horizontal= {true} contentContainerStyle={styles.buttonsListWrap}>
+        <List data={filterButtons} Component={FilterButton}/>
+      </ScrollView>
       <ScrollView contentContainerStyle={styles.listWrap}>
         <List data={productList} Component={ProductItem} />
       </ScrollView>
