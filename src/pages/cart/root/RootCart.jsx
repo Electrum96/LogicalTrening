@@ -18,7 +18,7 @@ const RootCart = () => {
   return (
     <LayoutMain title={'Продукты'}>
       <Text>RootCart</Text>
-      <ScrollView horizontal= {true} contentContainerStyle={styles.buttonsListWrap}>
+      <ScrollView horizontal contentContainerStyle={styles.buttonsListWrap}>
         <List data={filterButtons} Component={FilterButton}/>
       </ScrollView>
       <ScrollView contentContainerStyle={styles.listWrap}>

@@ -10,8 +10,11 @@ function useStyleRootCart () {
         },
         buttonsListWrap:{
             paddingVertical: 10,
-            gap: 20
-        }
+            gap: 20,
+            justifyContent: 'space-between',
+            flex: 1
+        },
+      
         
     });
 
