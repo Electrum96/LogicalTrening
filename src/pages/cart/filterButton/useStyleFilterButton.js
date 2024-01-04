@@ -3,17 +3,19 @@ import { StyleSheet } from 'react-native';
 function useStyleFilterButton() {
     const styles = StyleSheet.create({
         buttonWrap: {
-            height: 40,
-            width: 80,
+            height: 60,
+            width: 90,
             backgroundColor: 'blue',
             borderColor: 'orange',
             borderWidth: 2,
             borderRadius: 5,
-            alignItems: 'center'
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingHorizontal: 5
         },
         title: {
-            fontSize: 20,
-            fontWeight: '700'
+            fontSize: 17,
+            fontWeight: '800'
         }
     })
     return styles;

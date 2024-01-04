@@ -14,6 +14,11 @@ class ProductStore {
         return this.productListAll.find((item) => item.id === id);
     }
 
+    filterProduct = (classTab) => {
+        // if (classTab && this.productListAll.forEach((product) => product.classTab)); // думаю
+        return this.productListAll.filter((product) => product.classTab === classTab )
+    }
+
     increment = (id) => {
         const product = this.findProduct(id);
         
