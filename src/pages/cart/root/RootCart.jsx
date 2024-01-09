@@ -14,6 +14,7 @@ import FilterButton from '../filterButton/FilterButton';
 
 const RootCart = () => {
   const {productList} = productStore;
+ 
   const styles = useStyleRootCart();
   return (
     <LayoutMain title={'Продукты'}>

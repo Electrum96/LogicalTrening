@@ -8,50 +8,46 @@ class ProductStore {
     }
 
     productListAll = PRODUCT_DATA_ARRAY;
-    
+
 
     findProduct = (id) => {
         return this.productListAll.find((item) => item.id === id);
     }
 
     filterProduct = (classTab) => {
-        // if (classTab && this.productListAll.forEach((product) => product.classTab)); // думаю
-        return this.productListAll.filter((product) => product.classTab === classTab )
-    }
+        if (classTab === 'All') { return this.productListAll } else {
+             return this.productListAll.filter((product) => product.classTab === classTab)}
+        }
 
-    increment = (id) => {
-        const product = this.findProduct(id);
-        
-        if (product) { product.count += 1}
+        increment = (id) => {
+            const product = this.findProduct(id);
 
-    }
-    decrement = (id) => {
-        const product = this.findProduct(id);
-        if (product && product.count > 1) { product.count -= 1} else {this.remove(id)}
+            if (product) { product.count += 1 }
 
-    }
+        }
+        decrement = (id) => {
+            const product = this.findProduct(id);
+            if (product && product.count > 1) { product.count -= 1 } else { this.remove(id) }
 
-    add = (id) => {
-        const product = this.findProduct(id);
-        product.inBasket = true;
-    }
-    remove = (id) => {
-        const product = this.findProduct(id);
-        product.inBasket = false;
-    }
+        }
+
+        add = (id) => {
+            const product = this.findProduct(id);
+            product.inBasket = true;
+        }
+        remove = (id) => {
+            const product = this.findProduct(id);
+            product.inBasket = false;
+        }
     
-    get productList() { return this.productListAll.filter((product) => true ) };
+    get productList() { return this.productListAll.filter((product) => true) };
     
     get basketList() {
-    let basketList = this.productListAll.filter((product) => product.inBasket)
-    return basketList  };
+            return this.productListAll.filter((product) => product.inBasket)
+        };
 
-    get totalPrice() {return this.basketList.reduce((acc, product) => acc + product.count * product.price ,0)}
+    get totalPrice() { return this.basketList.reduce((acc, product) => acc + product.count * product.price, 0) }
 
-
-
-
-
-} 
+    } 
 
 export default new ProductStore();
