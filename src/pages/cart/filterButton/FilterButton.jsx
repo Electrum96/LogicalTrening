@@ -5,12 +5,12 @@ import {Text, View, TouchableOpacity} from 'react-native';
 import productStore from '../../../store/productStore';
 
 
-const FilterButton = ({title}) => {
+const FilterButton = ({title, classTab}) => {
 const styles = useStyleFilterButton();
 
 const {filterProduct} = productStore;
     return (
-        <TouchableOpacity onPress={() => filterProduct}>
+        <TouchableOpacity onPress={() => filterProduct(classTab)}>
         <View style={styles.buttonWrap}>
             <Text style={styles.title}>{title}</Text>
         </View>
