@@ -6,8 +6,7 @@ function useStyleRootHome () {
         pageWrapper:{
             backgroundColor: COLORS.accentBg,
             width: Dimensions.get('window').width,
-            height: Dimensions.get('window').height,
-            
+            height: Dimensions.get('window').height
         },
         listWrap:{
             gap: 10,

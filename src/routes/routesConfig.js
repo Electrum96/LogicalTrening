@@ -2,6 +2,7 @@ import RootBasket from '../pages/basket/rootBasket/RootBasket';
 import RootCart from '../pages/cart/root/RootCart';
 import RootHome from '../pages/home/root/RootHome';
 import RootTranslation from '../pages/translation/root/RootTranslation';
+import FirstPage from '../pages/cart/fistPage/FirstPage';
 
 export const ROUTES_CONFIG = {
   main: {
@@ -20,7 +21,7 @@ export const ROUTES_CONFIG = {
     title: 'Меню',
     isShow: true,
     icon: 'utensils',
-    component: RootCart,
+    component: FirstPage,
     options: {headerShown: false},
   },
 
@@ -67,6 +68,15 @@ export const ROUTES_CONFIG = {
     title: 'Корзина',
     isShow: false,
     component: RootBasket,
+    options: {headerShown: false},
+  },
+  firstPage: {
+    id: 7,
+    name: 'FirstPage',
+    title: 'Меню кнопок',
+    isShow: false,
+    icon: 'utensils',
+    component: RootCart,
     options: {headerShown: false},
   },
 };
