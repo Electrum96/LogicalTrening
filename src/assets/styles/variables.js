@@ -8,6 +8,7 @@ const COLORS = {
     white: '#ffffff',
     dark: "#000000",
     blue: "#78adfd",
+    lightBlueText: "#071597",
     lightBlue: '#ccd9f0'
   
 }

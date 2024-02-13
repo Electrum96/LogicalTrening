@@ -17,7 +17,7 @@ const ItemTranslation = ({ time, team1, team2, liga, date }) => {
             </View>
             <View style={styles.timeWrap}>
             <Text style={styles.date}>{date}.02</Text>
-            <Text style={styles.time}>{time}</Text>
+            <Text style={styles.date}>{time}</Text>
             </View>
 
         </View>

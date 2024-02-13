@@ -1,4 +1,4 @@
-import {Text, View, Image, ScrollView} from 'react-native';
+import { Text, View, Image, ScrollView } from 'react-native';
 
 import useStyleRootTranslation from "./useStyleRootTranslation";
 
@@ -13,13 +13,17 @@ const RootTranslation = () => {
     const styles = useStyleRootTranslation();
     return (
         <View style={styles.pageWrapper}>
-        <LayoutMain>
-            <Text style={styles.title}>Спортивные Трансляции</Text>
+            <LayoutMain>
+                <Text style={styles.title}>Спортивные Трансляции</Text>
+            </LayoutMain>
+
+            <View style={styles.container}>
             <ScrollView>
                 <List data={translation} Component={ItemTranslation} />
-            </ScrollView>
-        </LayoutMain>
-        </View>
+            </ScrollView >
+            </View>
+        
+        </View >
     )
 }
 

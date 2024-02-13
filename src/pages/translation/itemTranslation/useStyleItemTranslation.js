@@ -22,10 +22,11 @@ function useStyleItemTranslation() {
             width: '25%',
             height: '100%',
             justifyContent: 'center',
+            alignItems: 'center',
             padding: 20
         },
         team: {
-            color: COLORS.accentBg,
+            color: COLORS.lightBlueText,
             fontWeight: '700',
             fontSize: 20
         },
@@ -41,6 +42,11 @@ function useStyleItemTranslation() {
             color: COLORS.dark,
             fontWeight: '700'
         },
+        date:{
+            fontWeight: '700',
+            color: COLORS.dark,
+            fontSize: 18
+        }
 
 
 

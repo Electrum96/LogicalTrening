@@ -13,6 +13,10 @@ function useStyleRootTranslation() {
          fontSize: 25,
          fontWeight: '700',
          marginBottom: 20
+      },
+      container:{
+         height: '80%',
+         marginBottom: 30
       }
     
 

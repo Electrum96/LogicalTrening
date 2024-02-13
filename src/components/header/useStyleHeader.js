@@ -6,7 +6,8 @@ function useStyleHeader () {
             flexDirection: 'row',
             justifyContent: 'space-between',
             paddingVertical: 10,
-            alignItems: 'center'
+            alignItems: 'center',
+           
         }
         
     });
