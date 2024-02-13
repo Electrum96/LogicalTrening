@@ -2,11 +2,13 @@ const COLORS = {
     accent: "#fdea8a",
     accentBg: "#03154e",
     lightBg: "#88b1ff",
+    yelBgc: "#fdea8a",
 
     light: "#FFF",
     white: '#ffffff',
     dark: "#000000",
-    blueText: "#78adfd"
+    blue: "#78adfd",
+    lightBlue: '#ccd9f0'
   
 }
 

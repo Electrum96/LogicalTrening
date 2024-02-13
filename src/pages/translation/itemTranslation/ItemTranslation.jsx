@@ -1,16 +1,25 @@
 import { Text, View, Image } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import useStyleItemTranslation from './useStyleItemTranslation';
+import limitText from '../../../utils/utils';
 
-const ItemTranslation = ({time, team1, team2, liga}) => {
+const ItemTranslation = ({ time, team1, team2, liga, date }) => {
 
-    const styles = useStyleItemTranslation;
+    const styles = useStyleItemTranslation();
     return (
         <View style={styles.container}>
-            <Text>{time}</Text>
-            <Text>{team1}</Text>
-            <Text>{team2}</Text>
-            <Text>{liga}</Text>
+            <View style={styles.ligaWrapper}>
+            <Text style={styles.liga}>{limitText(liga, 6)}</Text>
+            </View>
+            <View style={styles.teamContainer}>
+            <Text style={styles.team}>{team1}</Text>
+            <Text style={styles.team}>{team2}</Text>
+            </View>
+            <View style={styles.timeWrap}>
+            <Text style={styles.date}>{date}.02</Text>
+            <Text style={styles.time}>{time}</Text>
+            </View>
+
         </View>
     )
 }

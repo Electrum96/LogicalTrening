@@ -6,11 +6,7 @@ function useStyleLayoutMain () {
             flex: 1,
             justifyContent: 'space-between'
         },
-        header:{
-    
-        },
         main: {
-       
             flex: 1
         }
         

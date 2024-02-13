@@ -7,6 +7,7 @@ import ButtonIcon from '../buttonIcon/ButtonIcon';
 import {useNavigation, useRoute} from '@react-navigation/native';
 
 import {ROUTES_CONFIG} from '../../routes/routesConfig';
+import { COLORS } from '../../assets/styles/variables';
 
 const Header = ({title}) => {
   const navigation = useNavigation();
@@ -25,12 +26,12 @@ const Header = ({title}) => {
         <ButtonIcon color={'red'} icon={'bars'} onPress={goMain} />
       )}
       {!isShowBars && (
-        <ButtonIcon color={'red'} icon={'arrow-left'} onPress={goBack} />
+        <ButtonIcon color={COLORS.lightBg} icon={'angle-left'} onPress={goBack} />
       )}
 
       <Text>{title}</Text>
       {isShowBasket && (
-        <ButtonIcon color={'red'} icon={'shopping-cart'} onPress={goBasket} />
+        <ButtonIcon color={COLORS.blue} icon={'shopping-cart'} onPress={goBasket} />
       )}
     </View>
   );
