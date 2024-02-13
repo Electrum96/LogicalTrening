@@ -2,13 +2,14 @@ import { Text, View, Image, ScrollView } from 'react-native';
 
 import useStyleRootTranslation from "./useStyleRootTranslation";
 
-import translation from '../../../assets/data/translation';
+import { TRANSLATION_ARRAY } from '../../../assets/data/translation';
 import LayoutMain from '../../../components/layoutMain/LayoutMain';
 import List from '../../../components/list/List';
 import ItemTranslation from '../itemTranslation/ItemTranslation';
 
 
 const RootTranslation = () => {
+    const translation = TRANSLATION_ARRAY;
 
     const styles = useStyleRootTranslation();
     return (
