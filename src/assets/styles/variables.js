@@ -1,12 +1,12 @@
 const COLORS = {
-    accent: "#f5f5f5",
-    accentBg: "#fbc229",
-    lightBg: "#ffeeda",
+    accent: "#fdea8a",
+    accentBg: "#03154e",
+    lightBg: "#88b1ff",
 
     light: "#FFF",
     white: '#ffffff',
     dark: "#000000",
-    blue: "#00bbdc"
+    blueText: "#78adfd"
   
 }
 

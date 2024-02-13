@@ -8,37 +8,67 @@ export const ROUTES_CONFIG = {
     id: 0,
     name: 'RootHome',
     title: 'Главная',
-    isShow: false,
+    isShow: true,
+    icon: 'house',
     component: RootHome,
     options: {headerShown: false},
   },
 
   cart: {
-    id: 2,
-    name: 'Cart',
-    title: 'Меню продуктов',
+    id: 1,
+    name: 'RootCart',
+    title: 'Меню',
     isShow: true,
+    icon: 'utensils',
     component: RootCart,
     options: {headerShown: false},
   },
 
-  basket: {
-    id: 3,
-    name: 'Basket',
-    title: 'Корзина',
+  reserve: {
+    id: 2,
+    name: 'RootReserve',
+    title: 'Резерв',
+    icon: 'user-tie',
     isShow: true,
-    component: RootBasket,
+    component: RootBasket,//здесь будет страница резерва
+    options: {headerShown: false},
+  },
+  events: {
+    id: 3,
+    name: 'RootEvents',
+    title: 'События',
+    icon: 'calendar-days',
+    isShow: true,
+    component: RootBasket,//здесь будет страница события
     options: {headerShown: false},
   },
 
   translation:{
     id:4,
-    name: 'Translation',
+    name: 'RootTranslation',
     title: 'Трансляции',
+    icon: 'futbol',
     component: RootTranslation,
     isShow: true,
     options: {headerShown: false}
-  }
+  },
+  contacts:{
+    id:5,
+    name: 'RootContacts',
+    title: 'Контакты',
+    icon: 'address-book',
+    component: RootTranslation,// здесь будет страница контакты
+    isShow: true,
+    options: {headerShown: false}
+  },
+  basket: {
+    id: 6,
+    name: 'Basket',
+    title: 'Корзина',
+    isShow: false,
+    component: RootBasket,
+    options: {headerShown: false},
+  },
 };
 
 export const ARRAY_ROUTES = Object.entries(ROUTES_CONFIG).map(
