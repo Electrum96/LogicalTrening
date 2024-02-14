@@ -18,23 +18,21 @@ const RootBasket = () => {
   const {basketList, totalPrice} = productStore;
   const navigation = useNavigation();
   const goMain = () => navigation.push(ROUTES_CONFIG.main.name);
-
-
   const styles = useStyleRootBasket();
   return (
     <View style={styles.pageWrapper}>
     <LayoutMain>
       <Text style={styles.pageTitle}> Корзина</Text>
-   
       <ScrollView contentContainerStyle={styles.list}>
         <List data={basketList} Component={BasketItem}/>
        </ScrollView>
        </LayoutMain>
        <View style={styles.footer}>
+        
        <Text style={styles.title}>Итого</Text>
-       <Text style={styles.count}>{totalPrice}</Text>
+       <Text style={styles.count}>{totalPrice} $</Text>
        </View>
-       <LongButton title={'Оформить заказ'} color={COLORS.lightBlue} onPress={goMain}/>
+       <LongButton title={'Оформить заказ'} color={COLORS.lightBg} onPress={goMain}/>
        </View>
   );
 };

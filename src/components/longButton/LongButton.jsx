@@ -8,7 +8,7 @@ const LongButton = ({ title, color, onPress }) => {
     return (
         <TouchableOpacity onPress={onPress}>
             <View style={styles.container}>
-                <Text>{title}</Text>
+                <Text style={styles.title}>{title}</Text>
             </View>
         </TouchableOpacity>
     )

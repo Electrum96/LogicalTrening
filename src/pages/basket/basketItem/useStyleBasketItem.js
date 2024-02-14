@@ -10,6 +10,7 @@ function useStyleBasketItem() {
       height: 100,
       width: "90%",
       paddingLeft: 10,
+      paddingBottom: 15,
       alignItems: 'center',
       borderRightWidth: 1,
       borderTopRightRadius: 20,
@@ -36,6 +37,16 @@ function useStyleBasketItem() {
       gap: 5,
       padding: 5,
     },
+    priceWrapper:{
+      borderBottomWidth: 2,
+      width: 50
+    },
+    price:{
+      color: COLORS.dark,
+      fontSize: 20,
+      fontWeight: '700',
+      textAlign: 'center'
+    }
   });
 
   return styles;

@@ -1,54 +1,59 @@
-import {Dimensions, StyleSheet} from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 import { COLORS } from '../../../assets/styles/variables';
 
-function useStyleRootBasket () {
+function useStyleRootBasket() {
     const styles = StyleSheet.create({
-        pageWrapper:{
+        pageWrapper: {
             backgroundColor: COLORS.accentBg,
             width: Dimensions.get('window').width,
             height: Dimensions.get('window').height,
             height: '100%',
             justifyContent: 'center',
-            position: 'absolute'
+            position: 'absolute',
+            paddingBottom: 20
         },
 
-        pageTitle:{
+        pageTitle: {
             color: COLORS.white,
             fontSize: 25,
         },
 
-        list:{
+        list: {
             paddingVertical: 20,
             gap: 30,
             height: '70%'
-            
+
         },
-        footer:{
+        footer: {
             backgroundColor: COLORS.yelBgc,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
+            alignItems: 'flex-end',
             height: '10%',
             width: '30%',
             alignSelf: 'flex-end',
-            borderTopLeftRadius: 20,
-            borderBottomLeftRadius: 20,
-            padding: 20,
+            borderTopLeftRadius: 15,
+            borderBottomLeftRadius: 15,
+            paddingVertical: 20,
             marginBottom: 20,
             position: 'relative',
             bottom: 100
         },
-        title:{
-        fontSize: 20,
-        fontWeight: '700'
+        title: {
+            fontSize: 22,
+            fontWeight: '700',
+            color: COLORS.dark,
+            borderBottomWidth: 2,
+            width: 90
         },
-        count:{
-        fontSize: 20,
-        fontWeight: '700'
-        },
-        button:{
-            
+
+        count: {
+            fontSize: 20,
+            fontWeight: '700',
+            color: COLORS.dark,
+            alignSelf: 'center'
         }
-        
+
+
     });
 
     return styles;

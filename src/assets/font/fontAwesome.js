@@ -15,7 +15,8 @@ import {
     faFutbol,
     faAddressBook,
     faUserTie,
-    faCalendarDays
+    faCalendarDays,
+    faXmark
   } from '@fortawesome/free-solid-svg-icons';
   import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -36,5 +37,6 @@ import {
     faFutbol,
     faAddressBook,
     faUserTie,
-    faCalendarDays
+    faCalendarDays,
+    faXmark
   );

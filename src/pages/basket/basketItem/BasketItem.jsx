@@ -15,11 +15,13 @@ const BasketItem = ({ count, title, price, id }) => {
     <View style={styles.wrapper}>
       <View style={styles.informWrap}>
         <Text style={styles.title} numberOfLines={2}>{title}</Text>
+        <Counter count={count} increment={() => increment(id)} decrement={() => decrement(id)} />
       </View>
-      <Counter count={count} increment={() => increment(id)} decrement={() => decrement(id)} />
       <View style={styles.btnWrap}>
-        <ButtonIcon icon={'trash'} size={20} onPress={() => remove(id)} />
+        <ButtonIcon icon={'xmark'} size={20} onPress={() => remove(id)} />
+        <View style={styles.priceWrapper}>
         <Text style={styles.price}>{price * count}$</Text>
+        </View>
       </View>
     </View>
   );
