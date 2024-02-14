@@ -1,49 +1,49 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import { COLORS } from '../../../assets/styles/variables';
 
-function useStyleProductItem () {
+function useStyleProductItem() {
     const styles = StyleSheet.create({
-        wrapper:{
-           flex: 1,
-           flexBasis: '40%',
-           gap: 5,
-           justifyContent: 'space-between',
-           backgroundColor: 'red'
+        wrapper: {
+            height: 170,
+            flexDirection: 'row',
+            gap: 10,
+            borderTopWidth: 2,
+            borderBottomWidth: 2,
+            borderColor: COLORS.lightBg,
         
         },
-        image:{
-            width: "100%",
-            height: 150
+        image: {
+            width: "40%",
+            height: "100%"
         },
-        box:{
+        box: {
             flex: 1,
             justifyContent: 'space-between'
         },
-        contentWrap:{
-            padding: 8,
-            
-
+        contentWrap: {
+           paddingVertical: 10
         },
-        title:{
-            textAlign: 'center',
+        title: {
+            
             fontWeight: '700',
             marginBottom: 5,
-            color: COLORS.dark,
-            fontSize: 15
+            color: COLORS.lightBg,
+            fontSize: 18
         },
-        footer:{
+        footer: {
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignItems: 'center',
             padding: 8
         },
-        desc:{
+        desc: {
             marginBottom: 10,
-            color: COLORS.dark
+            color: COLORS.white
         },
-        price:{
-            color: COLORS.dark,
-            fontSize: 20
+        price: {
+            color: COLORS.white,
+            fontSize: 20,
+            fontWeight: '700'
         }
     });
 

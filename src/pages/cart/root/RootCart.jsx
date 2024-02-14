@@ -17,14 +17,18 @@ const RootCart = () => {
  
   const styles = useStyleRootCart();
   return (
-    <LayoutMain title={'Продукты'}>
-      <ScrollView horizontal={true} contentContainerStyle={styles.buttonsListWrap}>
+    <View style={styles.pageWrapper}>
+    
+    <LayoutMain>
+        <View style={styles.container}>
         <List data={filterButtons} Component={FilterButton}/>
-      </ScrollView>
-      <ScrollView contentContainerStyle={styles.listWrap}>
+        </View>
+      <ScrollView contentContainerStyle={styles.listWrap} >
         <List data={productList} Component={ProductItem} />
       </ScrollView>
-    </LayoutMain>
+      </LayoutMain>
+  
+    </View>
   );
 };
 

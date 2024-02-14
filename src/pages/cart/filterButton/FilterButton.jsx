@@ -6,6 +6,7 @@ import productStore from '../../../store/productStore';
 
 
 const FilterButton = ({title, classTab}) => {
+    
 const styles = useStyleFilterButton();
 
 const {filterProduct} = productStore;
