@@ -7,6 +7,9 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.accentBg,
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height,
+        justifyContent: 'space-between',
+        height: '100%',
+        paddingBottom: 20
     },
     imageWrapper:{
         alignItems: 'center',
@@ -21,7 +24,11 @@ const styles = StyleSheet.create({
     logo:{
         width: '70%',
         height: '45%'
+    },
 
+    itemsContainer:{
+        height: '60%',
+        gap: 20
     }
 
    });

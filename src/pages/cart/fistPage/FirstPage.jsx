@@ -18,7 +18,9 @@ const FirstPage = () => {
             <View style={styles.imageWrapper}>
             <Image  style={styles.logo}source={require('../../../assets/images/dev/logo/LogoCartPage.png')} />
             </View>
+            <View style={styles.itemsContainer}>
             <List data={filterButtons} Component={FirstPageButton} />
+            </View>
             <ButtonIcon icon={'shopping-cart'} onPress={goBasket} color={COLORS.light} size={60}/>
         </View>
     )
