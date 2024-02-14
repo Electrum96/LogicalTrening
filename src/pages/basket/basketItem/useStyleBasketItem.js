@@ -5,10 +5,15 @@ function useStyleBasketItem() {
   const styles = StyleSheet.create({
     wrapper: {
       flexDirection: 'row',
-      // flex: 1,
+      backgroundColor: COLORS.lightBlue,
       gap: 10,
-      height: 150,
+      height: 100,
+      width: "90%",
+      paddingLeft: 10,
       alignItems: 'center',
+      borderRightWidth: 1,
+      borderTopRightRadius: 20,
+      borderBottomRightRadius: 20
     },
     informWrap: {
       flexDirection: 'column',

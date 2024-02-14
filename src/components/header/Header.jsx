@@ -16,7 +16,7 @@ const Header = ({ title }) => {
   const goBasket = () => navigation.push(ROUTES_CONFIG.basket.name);
 
   const { name } = useRoute();
-  const isShowBars = name === ROUTES_CONFIG.cart.name;
+
 
   const styles = useStyleHeader();
   return (
