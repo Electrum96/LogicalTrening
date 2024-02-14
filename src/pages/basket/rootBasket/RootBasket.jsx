@@ -1,4 +1,4 @@
-import {Text, View, Image, ScrollView, TouchableOpacity} from 'react-native';
+import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
 
 import useStyleRootBasket from './useStyleRootBasket';
 import LayoutMain from '../../../components/layoutMain/LayoutMain';
@@ -8,16 +8,16 @@ import List from '../../../components/list/List';
 
 import productStore from '../../../store/productStore';
 
-import {observer} from 'mobx-react-lite';
+import { observer } from 'mobx-react-lite';
 import LongButton from '../../../components/longButton/LongButton';
 import { COLORS } from '../../../assets/styles/variables';
 import { useNavigation } from '@react-navigation/native';
 import { ROUTES_CONFIG } from '../../../routes/routesConfig';
 
 const RootBasket = () => {
-  const {basketList, totalPrice} = productStore;
+  const { basketList, totalPrice } = productStore;
   const navigation = useNavigation();
-  const goMain = () => navigation.push(ROUTES_CONFIG.main.name);
+  const goConfirm = () => navigation.push(ROUTES_CONFIG.confirm.name);
   const styles = useStyleRootBasket();
   return (
     <View style={styles.pageWrapper}>
@@ -32,7 +32,7 @@ const RootBasket = () => {
        <Text style={styles.title}>Итого</Text>
        <Text style={styles.count}>{totalPrice} $</Text>
        </View>
-       <LongButton title={'Оформить заказ'} color={COLORS.lightBg} onPress={goMain}/>
+       <LongButton title={'Оформить заказ'} color={COLORS.lightBg} onPress={goConfirm}/>
        </View>
   );
 };

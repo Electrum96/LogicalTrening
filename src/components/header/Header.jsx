@@ -22,7 +22,7 @@ const Header = ({ title }) => {
   return (
     <View style={styles.headerWrap}>
 
-      <ButtonIcon color={COLORS.lightBg} icon={'angle-left'} onPress={goBack} />
+      <ButtonIcon color={COLORS.white} icon={'angle-left'} onPress={goBack} />
 
       <Text>{title}</Text>
       <ButtonIcon color={COLORS.lightBg} icon={'bars'} onPress={goMain} />

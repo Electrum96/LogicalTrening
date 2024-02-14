@@ -3,6 +3,7 @@ import RootCart from '../pages/cart/root/RootCart';
 import RootHome from '../pages/home/root/RootHome';
 import RootTranslation from '../pages/translation/root/RootTranslation';
 import FirstPage from '../pages/cart/fistPage/FirstPage';
+import ConfirmPage from '../pages/confirmPage/ConfirmPage';
 
 export const ROUTES_CONFIG = {
   main: {
@@ -75,10 +76,20 @@ export const ROUTES_CONFIG = {
     name: 'FirstPage',
     title: 'Меню кнопок',
     isShow: false,
-    icon: 'utensils',
+    icon: '',
     component: RootCart,
     options: {headerShown: false},
   },
+  confirm:{
+    id: 8,
+    name: 'ConfirmPage',
+    title: 'Заказ подтвержден',
+    isShow: false,
+    icon: '',
+    component: ConfirmPage,
+    options: {headerShown: false},
+
+  }
 };
 
 export const ARRAY_ROUTES = Object.entries(ROUTES_CONFIG).map(
