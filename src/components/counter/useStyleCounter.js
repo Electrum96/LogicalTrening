@@ -6,6 +6,12 @@ function useStyleCounter() {
     wrapper: {
       flexDirection: 'row',
       backgroundColor: COLORS.light,
+      width: 60,
+      height: 30,
+      backgroundColor: COLORS.yelBgc,
+      borderRadius: 15,
+      alignItems: 'center',
+      justifyContent: 'center'
      
     },
     button: {

@@ -7,6 +7,7 @@ import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 import productStore from '../../../store/productStore';
 import {icon} from '@fortawesome/fontawesome-svg-core';
 import Counter from '../../../components/counter/Counter';
+import { COLORS } from '../../../assets/styles/variables';
 
 const ProductItem = ({title, image, desc, price, id, inBasket, count}) => {
   const {add, remove, increment,decrement} = productStore;
@@ -32,7 +33,7 @@ const ProductItem = ({title, image, desc, price, id, inBasket, count}) => {
           <Text style={styles.price}>{price}$</Text> : <Counter count={count} increment={increment} decrement={count > 0 ? decrement : remove}/>}
           <ButtonIcon
             icon={'shopping-cart'}
-            color={inBasket? 'red' : 'white'}
+            color={inBasket? COLORS.yelBgc : COLORS.dark}
             onPress={inBasket ? handlerRemove : handlerAdd}
           />
         </View>

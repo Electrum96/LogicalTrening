@@ -20,6 +20,9 @@ function useStyleBasketItem() {
       flexDirection: 'column',
       flex: 1,
       height: '100%',
+      width: '10%',
+      gap: 10,
+      justifyContent: 'center'
     },
     image: {
       width: '50%',
