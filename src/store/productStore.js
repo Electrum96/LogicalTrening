@@ -7,12 +7,12 @@ class ProductStore {
         makeAutoObservable(this)
     }
 
-    filter = {
-        classTab: 'Burgers'
+    filterTitle = {
+        classTab: 'Main'
     };
 
     productListAll = PRODUCT_DATA_ARRAY;
-    productFiltered;
+    productFiltered = PRODUCT_DATA_ARRAY;
 
 
     findProduct = (id) => {
@@ -41,11 +41,14 @@ class ProductStore {
     }
 
     filterProduct = tab => {
-            const filtered = this.productListAll.filter((product) => product.classTab === tab.classTab);
-            console.log(filtered);
-            this.filter.classTab = tab.classTab;
-            return this.productFiltered = filtered;
-            
+        const filtered = this.productListAll.filter(product => product.classTab === tab.classTab)
+
+        if (tab.classTab === 'All') {
+            this.productsForFilter = this.productListAll
+        } else {
+            this.productsForFilter = filtered;
+        };
+        this.filterTitle = tab;
     }
 
     get productList() { return this.productListAll.filter((product) => true) };

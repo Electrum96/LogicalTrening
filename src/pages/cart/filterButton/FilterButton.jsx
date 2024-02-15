@@ -9,9 +9,9 @@ import useStyleFilterButton from './useStyleFilterButton';
 const FilterButton = tab => {
     const { title, classTab } = tab;
 
-    const { filterProduct, filter } = productStore;
+    const { filterProduct, filterTitle } = productStore;
 
-    const isActive = classTab === filter.classTab;
+    const isActive = classTab === filterTitle.classTab;
 
 
     const styles = useStyleFilterButton(isActive);

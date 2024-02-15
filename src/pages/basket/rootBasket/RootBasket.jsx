@@ -1,18 +1,19 @@
-import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { Text, View, Image, ScrollView} from 'react-native';
+import { observer } from 'mobx-react-lite';
+import { useNavigation } from '@react-navigation/native';
 
-import useStyleRootBasket from './useStyleRootBasket';
 import LayoutMain from '../../../components/layoutMain/LayoutMain';
-
 import BasketItem from '../basketItem/BasketItem';
+import LongButton from '../../../components/longButton/LongButton';
 import List from '../../../components/list/List';
 
 import productStore from '../../../store/productStore';
 
-import { observer } from 'mobx-react-lite';
-import LongButton from '../../../components/longButton/LongButton';
 import { COLORS } from '../../../assets/styles/variables';
-import { useNavigation } from '@react-navigation/native';
+
 import { ROUTES_CONFIG } from '../../../routes/routesConfig';
+
+import useStyleRootBasket from './useStyleRootBasket';
 
 const RootBasket = () => {
   const { basketList, totalPrice } = productStore;

@@ -10,7 +10,7 @@ function useStyleBasketItem() {
       height: 100,
       width: "80%",
       paddingLeft: 10,
-      paddingVertical: 15,
+      paddingVertical: 10,
       alignItems: 'center',
       borderRightWidth: 1,
       borderTopRightRadius: 20,
