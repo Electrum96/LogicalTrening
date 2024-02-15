@@ -5,7 +5,7 @@ function useStyleConfirmPage() {
 const styles = StyleSheet.create({
     container:{
         height: '100%',
-        backgroundColor: COLORS.blue,
+        backgroundColor: COLORS.lightBg,
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height,
    
@@ -19,6 +19,19 @@ const styles = StyleSheet.create({
         height: '100%',
         alignItems: 'center',
         gap: 20
+    },
+    titleBox:{
+        width: 200,
+        height: 40,
+        borderRadius: 15,
+        backgroundColor: COLORS.lightBlueText,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    title:{
+        color: COLORS.white,
+        fontSize: 20,
+        fontWeight: '700'
     }
 
    });

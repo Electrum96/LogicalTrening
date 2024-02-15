@@ -25,7 +25,7 @@ const Header = ({ title }) => {
       <ButtonIcon color={COLORS.white} icon={'angle-left'} onPress={goBack} />
 
       <Text>{title}</Text>
-      <ButtonIcon color={COLORS.lightBg} icon={'bars'} onPress={goMain} />
+      <ButtonIcon color={COLORS.blueBars} icon={'bars'} onPress={goMain} />
 
     </View>
   );
