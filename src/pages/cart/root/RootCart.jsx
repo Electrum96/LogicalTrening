@@ -1,33 +1,35 @@
-import {Text, View, Image, ScrollView} from 'react-native';
+import { Text, View, Image, ScrollView } from 'react-native';
+import { observer } from 'mobx-react-lite';
 
 import useStyleRootCart from './useStyleRootCart';
 
 import LayoutMain from '../../../components/layoutMain/LayoutMain';
 import List from '../../../components/list/List';
 
-import productStore from '../../../store/productStore';
+import FilterButton from '../filterButton/FilterButton';
 import ProductItem from '../productItem/ProductItem';
 
-import {observer} from 'mobx-react-lite';
+import productStore from '../../../store/productStore';
 import filterButtons from '../../../assets/data/filterButtons';
-import FilterButton from '../filterButton/FilterButton';
+
+
 
 const RootCart = () => {
-  const {productList} = productStore;
- 
+
+  const { productFiltered } = productStore;
+
   const styles = useStyleRootCart();
   return (
     <View style={styles.pageWrapper}>
-    
-    <LayoutMain>
+      <LayoutMain>
         <View style={styles.container}>
-        <List data={filterButtons} Component={FilterButton}/>
+          <List data={filterButtons} Component={FilterButton} />
         </View>
-      <ScrollView contentContainerStyle={styles.listWrap} >
-        <List data={productList} Component={ProductItem} />
-      </ScrollView>
+        <ScrollView contentContainerStyle={styles.listWrap} >
+          <List data={productFiltered} Component={ProductItem} />
+        </ScrollView>
       </LayoutMain>
-  
+
     </View>
   );
 };

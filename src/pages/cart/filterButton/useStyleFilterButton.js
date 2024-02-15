@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { COLORS } from '../../../assets/styles/variables';
 
-function useStyleFilterButton() {
+function useStyleFilterButton(isActive) {
     const styles = StyleSheet.create({
         buttonWrap: {
             height: 60,
@@ -12,7 +12,7 @@ function useStyleFilterButton() {
         },
         title: {
             fontSize: 15,
-            color: COLORS.white
+            color: isActive ? COLORS.yelBgc : COLORS.white
         }
     })
     return styles;

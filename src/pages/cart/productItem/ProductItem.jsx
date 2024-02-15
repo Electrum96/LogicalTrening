@@ -3,10 +3,10 @@ import {observer} from 'mobx-react-lite';
 
 import useStyleProductItem from './useStyleProductItem';
 import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
+import Counter from '../../../components/counter/Counter';
 
 import productStore from '../../../store/productStore';
-import {icon} from '@fortawesome/fontawesome-svg-core';
-import Counter from '../../../components/counter/Counter';
+
 import { COLORS } from '../../../assets/styles/variables';
 
 const ProductItem = ({title, image, desc, price, id, inBasket, count}) => {
