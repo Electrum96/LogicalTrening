@@ -16,7 +16,8 @@ import filterButtons from '../../../assets/data/filterButtons';
 
 const RootCart = () => {
 
-  const { productsForFilter } = productStore;
+  const { productFiltered } = productStore;
+  console.log(productFiltered);
 
   const styles = useStyleRootCart();
   return (
@@ -26,7 +27,7 @@ const RootCart = () => {
           <List data={filterButtons} Component={FilterButton} />
         </View>
         <ScrollView contentContainerStyle={styles.listWrap} >
-          <List data={productsForFilter} Component={ProductItem} />
+          <List data={productFiltered} Component={ProductItem} />
         </ScrollView>
       </LayoutMain>
 

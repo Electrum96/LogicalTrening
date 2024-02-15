@@ -41,13 +41,7 @@ class ProductStore {
     }
 
     filterProduct = tab => {
-        const filtered = this.productListAll.filter(product => product.classTab === tab.classTab)
-
-        if (tab.classTab === 'All') {
-            this.productsForFilter = this.productListAll
-        } else {
-            this.productsForFilter = filtered;
-        };
+        this.productFiltered = this.productListAll.filter(product => product.classTab === tab.classTab)
         this.filterTitle = tab;
     }
 

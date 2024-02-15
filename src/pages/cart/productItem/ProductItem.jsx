@@ -11,7 +11,8 @@ import { COLORS } from '../../../assets/styles/variables';
 
 const ProductItem = ({title, image, desc, price, id, inBasket, count}) => {
   const {add, remove, increment,decrement} = productStore;
-
+  
+  console.log(inBasket);
   const handlerRemove = () => remove(id);
   const handlerAdd = () => add(id);
 
