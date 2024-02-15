@@ -4,6 +4,7 @@ import RootHome from '../pages/home/root/RootHome';
 import RootTranslation from '../pages/translation/root/RootTranslation';
 import FirstPage from '../pages/cart/fistPage/FirstPage';
 import ConfirmPage from '../pages/confirmPage/ConfirmPage';
+import BroningPage from '../pages/broning/BroningPage';
 
 export const ROUTES_CONFIG = {
   main: {
@@ -32,7 +33,7 @@ export const ROUTES_CONFIG = {
     title: 'Резерв',
     icon: 'user-tie',
     isShow: true,
-    component: RootBasket,//здесь будет страница резерва
+    component: BroningPage,//здесь будет страница резерва
     options: {headerShown: false},
   },
   events: {
