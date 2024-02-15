@@ -4,8 +4,12 @@ import useStyleBroningPage from './useStyleBroningPage';
 import LayoutMain from '../../components/layoutMain/LayoutMain';
 import LongButton from '../../components/longButton/LongButton';
 import { COLORS } from '../../assets/styles/variables';
+import { useNavigation } from '@react-navigation/native';
+import { ROUTES_CONFIG } from '../../routes/routesConfig';
 
 const BroningPage = () => {
+    const navigation = useNavigation();
+    const goReserved = () => navigation.push(ROUTES_CONFIG.reserved.name);
 
     const styles = useStyleBroningPage();
     return (
@@ -21,7 +25,7 @@ const BroningPage = () => {
                         <TextInput style={styles.inputs}>Столик</TextInput>
                     </View>
                     <View style={styles.btnContainer}>
-                    <LongButton title={'Забронировать'} color={COLORS.blue} onPress />
+                    <LongButton title={'Забронировать'} color={COLORS.blue} onPress={goReserved} />
                     </View>
                 </View>
             </LayoutMain>

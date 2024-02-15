@@ -23,7 +23,7 @@ const RootBasket = () => {
 
   const paymentHandler = () => {
     clear(),
-      goConfirm()
+    goConfirm()
   }
 
   console.log(basketList);

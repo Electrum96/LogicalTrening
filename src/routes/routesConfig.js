@@ -5,6 +5,7 @@ import RootTranslation from '../pages/translation/root/RootTranslation';
 import FirstPage from '../pages/cart/fistPage/FirstPage';
 import ConfirmPage from '../pages/confirmPage/ConfirmPage';
 import BroningPage from '../pages/broning/BroningPage';
+import ReservedPage from '../pages/reservedPage/ReservedPage';
 
 export const ROUTES_CONFIG = {
   main: {
@@ -33,7 +34,7 @@ export const ROUTES_CONFIG = {
     title: 'Резерв',
     icon: 'user-tie',
     isShow: true,
-    component: BroningPage,//здесь будет страница резерва
+    component: BroningPage,
     options: {headerShown: false},
   },
   events: {
@@ -88,6 +89,16 @@ export const ROUTES_CONFIG = {
     isShow: false,
     icon: '',
     component: ConfirmPage,
+    options: {headerShown: false},
+
+  },
+  reserved:{
+    id: 9,
+    name: 'ReservedPage',
+    title: 'Ваш столик забронирован',
+    isShow: false,
+    icon: '',
+    component: ReservedPage,// здесь страница зарезрвировано
     options: {headerShown: false},
 
   }
