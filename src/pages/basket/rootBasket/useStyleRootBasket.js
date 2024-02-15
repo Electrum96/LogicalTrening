@@ -7,10 +7,9 @@ function useStyleRootBasket() {
             backgroundColor: COLORS.accentBg,
             width: Dimensions.get('window').width,
             height: Dimensions.get('window').height,
-            height: '100%',
             justifyContent: 'center',
             position: 'absolute',
-            paddingBottom: 20
+            paddingBottom: 30
         },
 
         pageTitle: {
@@ -21,7 +20,7 @@ function useStyleRootBasket() {
         list: {
             paddingVertical: 20,
             gap: 30,
-            height: '70%'
+            height: 900
 
         },
         footer: {

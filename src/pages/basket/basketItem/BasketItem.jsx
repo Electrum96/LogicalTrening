@@ -14,7 +14,7 @@ const BasketItem = ({ count, title, price, id }) => {
   return (
     <View style={styles.wrapper}>
       <View style={styles.informWrap}>
-        <Text style={styles.title} numberOfLines={2}>{title}</Text>
+        <Text style={styles.title} numberOfLines={1}>{title}</Text>
         <Counter count={count} increment={() => increment(id)} decrement={() => decrement(id)} />
       </View>
       <View style={styles.btnWrap}>

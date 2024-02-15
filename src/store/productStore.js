@@ -6,10 +6,10 @@ class ProductStore {
     constructor() {
         makeAutoObservable(this)
     }
-    
+
     filter = {
         classTab: 'Burgers'
-      };
+    };
 
     productListAll = PRODUCT_DATA_ARRAY;
     productFiltered;
@@ -43,6 +43,7 @@ class ProductStore {
     filterProduct = tab => {
             const filtered = this.productListAll.filter((product) => product.classTab === tab.classTab);
             console.log(filtered);
+            this.filter.classTab = tab.classTab;
             return this.productFiltered = filtered;
             
     }
