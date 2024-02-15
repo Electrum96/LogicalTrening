@@ -4,7 +4,6 @@ import { observer } from 'mobx-react-lite';
 import useStyleBasketItem from './useStyleBasketItem';
 import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 import Counter from '../../../components/counter/Counter';
-
 import productStore from '../../../store/productStore';
 
 const BasketItem = ({ count, title, price, id }) => {
@@ -15,7 +14,7 @@ const BasketItem = ({ count, title, price, id }) => {
     <View style={styles.wrapper}>
       <View style={styles.informWrap}>
         <Text style={styles.title} numberOfLines={1}>{title}</Text>
-        <Counter count={count} increment={() => increment(id)} decrement={() => decrement(id)} />
+        <Counter id={id} count={count} increment={increment} decrement={decrement} />
       </View>
       <View style={styles.btnWrap}>
         <ButtonIcon icon={'xmark'} size={20} onPress={() => remove(id)} />

@@ -26,7 +26,6 @@ const RootBasket = () => {
     goConfirm()
   }
 
-  console.log(basketList);
   const styles = useStyleRootBasket();
 
   if (basketList.length > 0) {

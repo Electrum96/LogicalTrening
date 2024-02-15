@@ -26,22 +26,18 @@ class ProductStore {
 
     add = (id) => {
         const product = this.findProduct(id);
-        console.log(product);
         product.inBasket = true;
-        console.log(product.inBasket);
+       
     }
     remove = (id) => {
         const product = this.findProduct(id);
-        console.log(product);
         product.inBasket = false;
-        console.log(product.inBasket);
+        product.count = 1;
+       
     }
-
 
     increment = (id) => {
         const product = this.findProduct(id);
-        console.log(product);
-
         if (product) { product.count += 1 }
 
     }
@@ -55,7 +51,7 @@ class ProductStore {
     clear = () => {
         this.basketList.forEach(elem => {
           elem.inBasket = false;
-        //   elem.count = 1;
+         
         });
       };
 

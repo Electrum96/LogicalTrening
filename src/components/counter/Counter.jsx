@@ -3,17 +3,17 @@ import {observer} from 'mobx-react-lite';
 
 import useStyleCounter from './useStyleCounter';
 
-const Counter = ({count, increment, decrement}) => {
+const Counter = ({count, increment, decrement, id}) => {
   const styles = useStyleCounter();
   return (
     <View style={styles.wrapper}>
-      <TouchableOpacity style={[styles.decrement, styles.button]} onPress={decrement}>
+      <TouchableOpacity style={[styles.decrement, styles.button]} onPress={() => decrement(id)}>
         <Text>-</Text>
       </TouchableOpacity>
 
       <Text>{count}</Text>
       
-      <TouchableOpacity style={[styles.increment, styles.button]} onPress={increment}>
+      <TouchableOpacity style={[styles.increment, styles.button]} onPress={() => increment(id)}>
         <Text>+</Text>
       </TouchableOpacity>
     </View>

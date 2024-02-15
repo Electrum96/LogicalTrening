@@ -13,7 +13,6 @@ const FilterButton = tab => {
 
     const isActive = classTab === filterTitle.classTab;
 
-
     const styles = useStyleFilterButton(isActive);
     return (
         <TouchableOpacity onPress={() => filterProduct(tab)}>
