@@ -6,7 +6,8 @@ function useStyleRootCart() {
         pageWrapper: {
             backgroundColor: COLORS.accentBg,
             width: Dimensions.get('window').width,
-            height: Dimensions.get('window').height
+            height: Dimensions.get('window').height,
+            paddingBottom: 20
         },
         listWrap: {
             paddingVertical: 20,

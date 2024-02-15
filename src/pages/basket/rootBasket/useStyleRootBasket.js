@@ -20,7 +20,7 @@ function useStyleRootBasket() {
         list: {
             paddingVertical: 20,
             gap: 30,
-            height: 900
+            height: 650
 
         },
         footer: {
@@ -50,6 +50,21 @@ function useStyleRootBasket() {
             fontWeight: '700',
             color: COLORS.dark,
             alignSelf: 'center'
+        },
+        contentBox:{
+            height: '80%',
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
+
+        image:{
+            width: 170,
+            height: 170,
+            marginBottom: 20
+        },
+        description:{
+            color: COLORS.light,
+            fontSize: 20
         }
 
 

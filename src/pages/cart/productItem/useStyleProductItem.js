@@ -9,22 +9,22 @@ function useStyleProductItem() {
             gap: 10,
             borderTopWidth: 2,
             borderBottomWidth: 2,
-            borderColor: COLORS.lightBg,
-        
+            borderColor: COLORS.lightBg
         },
         image: {
-            width: "40%",
+            width: "50%",
             height: "100%"
         },
         box: {
             flex: 1,
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
+
         },
         contentWrap: {
-           paddingVertical: 10
+            paddingVertical: 10
+         
         },
         title: {
-            
             fontWeight: '700',
             marginBottom: 5,
             color: COLORS.lightBg,
