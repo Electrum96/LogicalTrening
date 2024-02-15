@@ -14,38 +14,44 @@ class ProductStore {
     productListAll = PRODUCT_DATA_ARRAY;
     productFiltered = PRODUCT_DATA_ARRAY;
 
-
-    findProduct = (id) => {
-        return this.productListAll.find((item) => item.id === id);
+    filterProduct = tab => {
+        this.productFiltered = this.productListAll.filter(product => product.classTab === tab.classTab)
+        this.filterTitle = tab;
     }
+
+   
+    findProduct = (id) => {
+        return this.productListAll.find((item) => item.id === id) 
+    }
+
+    add = (id) => {
+        const product = this.findProduct(id);
+        console.log(product);
+        product.inBasket = true;
+        console.log(product.inBasket);
+    }
+    remove = (id) => {
+        const product = this.findProduct(id);
+        console.log(product);
+        product.inBasket = false;
+        console.log(product.inBasket);
+    }
+
 
     increment = (id) => {
         const product = this.findProduct(id);
+        console.log(product);
 
         if (product) { product.count += 1 }
 
     }
+
     decrement = (id) => {
         const product = this.findProduct(id);
         if (product && product.count > 1) { product.count -= 1 } else { this.remove(id) }
 
     }
 
-    add = (id) => {
-        const product = this.findProduct(id);
-        product.inBasket = true;
-    }
-    remove = (id) => {
-        const product = this.findProduct(id);
-        product.inBasket = false;
-    }
-
-    filterProduct = tab => {
-        this.productFiltered = this.productListAll.filter(product => product.classTab === tab.classTab)
-        this.filterTitle = tab;
-    }
-
-    get productList() { return this.productListAll.filter((product) => true) };
 
     get basketList() {
         return this.productListAll.filter((product) => product.inBasket)

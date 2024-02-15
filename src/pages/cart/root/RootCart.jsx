@@ -17,7 +17,7 @@ import filterButtons from '../../../assets/data/filterButtons';
 const RootCart = () => {
 
   const { productFiltered } = productStore;
-  console.log(productFiltered);
+ 
 
   const styles = useStyleRootCart();
   return (
