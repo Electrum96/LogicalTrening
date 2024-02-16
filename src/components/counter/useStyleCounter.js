@@ -17,13 +17,12 @@ function useStyleCounter() {
     button: {
         paddingHorizontal: 5,
     },
-
-    decrement: {
-
-    },
-    increment: {
-
-    },
+    
+    elem :{
+      fontWeight: '600', 
+      color: COLORS.dark,
+      fontSize: 18
+    }
   });
 
   return styles;
