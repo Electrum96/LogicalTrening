@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         width: '95%',
         backgroundColor: COLORS.lightBlue,
         padding: 10,
-        color: COLORS.light,
+        color: COLORS.grey,
         fontSize: 15,
         fontWeight: '700'
     },

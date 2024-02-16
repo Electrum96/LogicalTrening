@@ -10,7 +10,8 @@ const COLORS = {
     blue: "#78adfd",
     lightBlueText: "#071597",
     lightBlue: '#ccd9f0',
-    blueBars: '#347ff0'
+    blueBars: '#347ff0',
+    grey: '#848282'
    
   
   

@@ -6,6 +6,7 @@ import FirstPage from '../pages/cart/fistPage/FirstPage';
 import ConfirmPage from '../pages/confirmPage/ConfirmPage';
 import BroningPage from '../pages/broning/BroningPage';
 import ReservedPage from '../pages/reservedPage/ReservedPage';
+import ContactsPage from '../pages/contacts/ContactsPage';
 
 export const ROUTES_CONFIG = {
   main: {
@@ -61,7 +62,7 @@ export const ROUTES_CONFIG = {
     name: 'RootContacts',
     title: 'Контакты',
     icon: 'address-book',
-    component: RootTranslation,// здесь будет страница контакты
+    component: ContactsPage,
     isShow: true,
     options: {headerShown: false}
   },
@@ -98,7 +99,7 @@ export const ROUTES_CONFIG = {
     title: 'Ваш столик забронирован',
     isShow: false,
     icon: '',
-    component: ReservedPage,// здесь страница зарезрвировано
+    component: ReservedPage,
     options: {headerShown: false},
 
   }
