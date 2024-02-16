@@ -8,13 +8,13 @@ import productStore from '../../../store/productStore';
 
 const BasketItem = ({ count, title, price, id }) => {
 
-  const { increment, decrement, remove } = productStore;
+  const { remove } = productStore;
   const styles = useStyleBasketItem();
   return (
     <View style={styles.wrapper}>
       <View style={styles.informWrap}>
         <Text style={styles.title} numberOfLines={1}>{title}</Text>
-        <Counter id={id} count={count} increment={increment} decrement={decrement} />
+        <Counter id={id} count={count} />
       </View>
       <View style={styles.btnWrap}>
         <ButtonIcon icon={'xmark'} size={20} onPress={() => remove(id)} />

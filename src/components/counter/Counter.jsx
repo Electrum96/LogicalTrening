@@ -2,8 +2,13 @@ import {Text, View, Image, TouchableOpacity} from 'react-native';
 import {observer} from 'mobx-react-lite';
 
 import useStyleCounter from './useStyleCounter';
+import { useState } from 'react';
+import productStore from '../../store/productStore';
 
-const Counter = ({count, increment, decrement, id}) => {
+const Counter = ({count, id}) => {
+    const {increment, decrement} = productStore;
+  
+
   const styles = useStyleCounter();
   return (
     <View style={styles.wrapper}>

@@ -29,7 +29,7 @@ const ProductItem = ({title, image, desc, price, id, inBasket, count}) => {
         </View>
         <View style={styles.footer}>
           {!inBasket?
-          <Text style={styles.price}>{price}$</Text> : <Counter count={count} increment={increment} decrement={count > 0 ? decrement : remove}/>}
+          <Text style={styles.price}>{price}$</Text> : <Counter count={count} id={id}/>}
           <ButtonIcon
             icon={'shopping-cart'}
             color={inBasket? COLORS.yelBgc : COLORS.dark}
