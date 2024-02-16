@@ -51,6 +51,7 @@ class ProductStore {
     clear = () => {
         this.basketList.forEach(elem => {
           elem.inBasket = false;
+          elem.count = 1;
          
         });
       };
