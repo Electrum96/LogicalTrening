@@ -17,7 +17,7 @@ const ContactsPage = () => {
                     <TextInput style={styles.inputs}>E-mail</TextInput>
                     <TextInput style={styles.inputs}>Индекс</TextInput>   
                 </View>
-                <Image  style={styles.logo}source={require('../../assets/images/dev/logo/LogoCartPage.png')} />
+                <Image  style={styles.logo} source={require('../../assets/images/dev/logo/LogoCartPage.png')} />
                 </View>
             </LayoutMain>
         </View>

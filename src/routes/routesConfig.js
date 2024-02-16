@@ -7,6 +7,7 @@ import ConfirmPage from '../pages/confirmPage/ConfirmPage';
 import BroningPage from '../pages/broning/BroningPage';
 import ReservedPage from '../pages/reservedPage/ReservedPage';
 import ContactsPage from '../pages/contacts/ContactsPage';
+import EventsMenuPage from '../pages/events/eventsMenuPage/EventsMenuPage';
 
 export const ROUTES_CONFIG = {
   main: {
@@ -14,6 +15,7 @@ export const ROUTES_CONFIG = {
     name: 'RootHome',
     title: 'Главная',
     isShow: true,
+    isEvent: false,
     icon: 'house',
     component: RootHome,
     options: {headerShown: false},
@@ -24,6 +26,7 @@ export const ROUTES_CONFIG = {
     name: 'RootCart',
     title: 'Меню',
     isShow: true,
+    isEvent: false,
     icon: 'utensils',
     component: FirstPage,
     options: {headerShown: false},
@@ -35,6 +38,7 @@ export const ROUTES_CONFIG = {
     title: 'Резерв',
     icon: 'user-tie',
     isShow: true,
+    isEvent: false,
     component: BroningPage,
     options: {headerShown: false},
   },
@@ -44,7 +48,8 @@ export const ROUTES_CONFIG = {
     title: 'События',
     icon: 'calendar-days',
     isShow: true,
-    component: RootBasket,//здесь будет страница события
+    isEvent: false,
+    component: EventsMenuPage,
     options: {headerShown: false},
   },
 
@@ -55,6 +60,7 @@ export const ROUTES_CONFIG = {
     icon: 'futbol',
     component: RootTranslation,
     isShow: true,
+    isEvent: false,
     options: {headerShown: false}
   },
   contacts:{
@@ -64,6 +70,7 @@ export const ROUTES_CONFIG = {
     icon: 'address-book',
     component: ContactsPage,
     isShow: true,
+    isEvent: false,
     options: {headerShown: false}
   },
   basket: {
@@ -71,6 +78,7 @@ export const ROUTES_CONFIG = {
     name: 'Basket',
     title: 'Корзина',
     isShow: false,
+    isEvent: false,
     component: RootBasket,
     options: {headerShown: false},
   },
@@ -79,7 +87,7 @@ export const ROUTES_CONFIG = {
     name: 'FirstPage',
     title: 'Меню кнопок',
     isShow: false,
-    icon: '',
+    isEvent: false,
     component: RootCart,
     options: {headerShown: false},
   },
@@ -88,7 +96,7 @@ export const ROUTES_CONFIG = {
     name: 'ConfirmPage',
     title: 'Заказ подтвержден',
     isShow: false,
-    icon: '',
+    isEvent: false,
     component: ConfirmPage,
     options: {headerShown: false},
 
@@ -98,8 +106,43 @@ export const ROUTES_CONFIG = {
     name: 'ReservedPage',
     title: 'Ваш столик забронирован',
     isShow: false,
-    icon: '',
+    isEvent: false,
     component: ReservedPage,
+    options: {headerShown: false},
+
+  },
+  firstEvent: {
+    id: 10,
+    name: 'FirstEvent',
+    title: '15.02',
+    time: '15:00',
+    isShow: false,
+    isEvent: true,
+    source: require('../assets/images/dev/eventsButtons/first.png'),
+    component: RootCart, // страница первого события
+    options: {headerShown: false},
+  },
+  secondEvent:{
+    id: 11,
+    name: 'SecondEvent',
+    title: '27.02',
+    time: '20:00',
+    isShow: false,
+    isEvent: true,
+    source: require('../assets/images/dev/eventsButtons/second.png'),
+    component: ConfirmPage,// страница второго события
+    options: {headerShown: false},
+
+  },
+  thirdEvent:{
+    id: 12,
+    name: 'ThirdEvent',
+    title: '28.02',
+    time: '19:00',
+    isShow: false,
+    isEvent: true,
+    source: require('../assets/images/dev/eventsButtons/third.png'),
+    component: ReservedPage, // страница  третье событие
     options: {headerShown: false},
 
   }
@@ -109,3 +152,4 @@ export const ARRAY_ROUTES = Object.entries(ROUTES_CONFIG).map(
   ([key, object]) => object,
 );
 export const ARRAY_BUTTONS = ARRAY_ROUTES.filter((route) => route.isShow);
+export const EVENTS_TABS =  ARRAY_ROUTES.filter((route) => route.isEvent);
