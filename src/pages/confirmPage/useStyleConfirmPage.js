@@ -7,18 +7,19 @@ const styles = StyleSheet.create({
         height: '100%',
         backgroundColor: COLORS.lightBg,
         width: Dimensions.get('window').width,
-        height: Dimensions.get('window').height,
-   
+        height: Dimensions.get('window').height
     },
     image:{
         width: 150,
         height: 150
     },
     contentBox:{
-        justifyContent: 'center',
-        height: '100%',
+        justifyContent: 'flex-end',
+        height: '60%',
         alignItems: 'center',
-        gap: 20
+        gap: 20,
+       
+        
     },
     titleBox:{
         width: 200,
