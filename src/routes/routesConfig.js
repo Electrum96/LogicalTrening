@@ -8,6 +8,9 @@ import BroningPage from '../pages/broning/BroningPage';
 import ReservedPage from '../pages/reservedPage/ReservedPage';
 import ContactsPage from '../pages/contacts/ContactsPage';
 import EventsMenuPage from '../pages/events/eventsMenuPage/EventsMenuPage';
+import BurgerPartyPage from '../pages/events/burgerPartyPage/BurgerPartyPage';
+import FootballPage from '../pages/events/footballPage/FootballPage';
+import PizzaPage from '../pages/events/pizzaPage/PizzaPage';
 
 export const ROUTES_CONFIG = {
   main: {
@@ -119,7 +122,7 @@ export const ROUTES_CONFIG = {
     isShow: false,
     isEvent: true,
     source: require('../assets/images/dev/eventsButtons/first.png'),
-    component: RootCart, // страница первого события
+    component: BurgerPartyPage, 
     options: {headerShown: false},
   },
   secondEvent:{
@@ -130,7 +133,7 @@ export const ROUTES_CONFIG = {
     isShow: false,
     isEvent: true,
     source: require('../assets/images/dev/eventsButtons/second.png'),
-    component: ConfirmPage,// страница второго события
+    component: FootballPage,
     options: {headerShown: false},
 
   },
@@ -142,7 +145,7 @@ export const ROUTES_CONFIG = {
     isShow: false,
     isEvent: true,
     source: require('../assets/images/dev/eventsButtons/third.png'),
-    component: ReservedPage, // страница  третье событие
+    component: PizzaPage, 
     options: {headerShown: false},
 
   }
