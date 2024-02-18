@@ -15,7 +15,7 @@ const RootTranslation = () => {
     return (
         <View style={styles.pageWrapper}>
             <LayoutMain>
-                <Text style={styles.title}>Спортивные Трансляции</Text>
+                <Text style={styles.title}>Спортске Емисије</Text>
             </LayoutMain>
 
             <View style={styles.container}>
