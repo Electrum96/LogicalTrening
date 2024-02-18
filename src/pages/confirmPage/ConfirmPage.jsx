@@ -15,7 +15,7 @@ const ConfirmPage = () => {
                 <View style={styles.contentBox}>
                     <Image style={styles.image} source={require('../../assets/images/dev/logo/qrCode.png')} />
                     <View style={styles.titleBox}>
-                        <Text style={styles.title}> Спасибо за заказ!</Text>
+                        <Text style={styles.title}>Хвала на поруџбини!</Text>
                     </View>
                 </View>
             </LayoutMain>

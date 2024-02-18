@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         
     },
     titleBox:{
-        width: 200,
+        width: 210,
         height: 40,
         borderRadius: 15,
         backgroundColor: COLORS.lightBlueText,
