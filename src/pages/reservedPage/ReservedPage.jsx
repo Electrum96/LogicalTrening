@@ -12,7 +12,7 @@ return (
         <View style={styles.contentBox}>
             <Image style={styles.image} source={require('../../assets/images/dev/logo/Vector.png')} />
             <View style={styles.titleBox}>
-                <Text style={styles.title}>Ваш столик забронирован</Text>
+                <Text style={styles.title}>Ваш сто је резервисан</Text>
             </View>
         </View>
     </LayoutMain>

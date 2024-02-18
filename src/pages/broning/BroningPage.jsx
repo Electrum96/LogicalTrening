@@ -15,17 +15,17 @@ const BroningPage = () => {
     return (
         <View style={styles.container}>
             <LayoutMain>
-                <Text style={styles.title}>Бронирование столика</Text>
+                <Text style={styles.title}>Резервација стола</Text>
                 <View style={styles.contentWrap}>
                     <View style={styles.form}>
-                        <TextInput style={styles.inputs}>Имя</TextInput>
-                        <TextInput style={styles.inputs}>Номер телефона</TextInput>
+                        <TextInput style={styles.inputs}>Име</TextInput>
+                        <TextInput style={styles.inputs}>Број телефона</TextInput>
                         <TextInput style={styles.inputs}>Дата</TextInput>
-                        <TextInput style={styles.inputs}>Время</TextInput>
-                        <TextInput style={styles.inputs}>Столик</TextInput>
+                        <TextInput style={styles.inputs}>Време</TextInput>
+                        <TextInput style={styles.inputs}>Сто</TextInput>
                     </View>
-                    <View style={styles.btnContainer}>
-                    <LongButton title={'Забронировать'} color={COLORS.blue} onPress={goReserved} />
+                    <View>
+                    <LongButton title={'Резервирајте'} color={COLORS.blue} onPress={goReserved} />
                     </View>
                 </View>
             </LayoutMain>

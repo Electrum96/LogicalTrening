@@ -5,7 +5,7 @@ function useStyleItemHome () {
     const styles = StyleSheet.create({
         itemWrap:{
             backgroundColor: COLORS.light,
-            width: '40%',
+            width: '41%',
             alignItems: 'center',
             padding: 10,
             borderRadius: 8,

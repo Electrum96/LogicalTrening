@@ -32,16 +32,16 @@ const RootBasket = () => {
     return (
       <View style={styles.pageWrapper}>
         <LayoutMain>
-          <Text style={styles.pageTitle}> Корзина</Text>
+          <Text style={styles.pageTitle}> Корпа</Text>
           <ScrollView contentContainerStyle={styles.list}>
             <List data={basketList} Component={BasketItem} />
           </ScrollView>
         </LayoutMain>
         <View style={styles.footer}>
-          <Text style={styles.title}>Итого</Text>
-          <Text style={styles.count}>{totalPrice} $</Text>
+          <Text style={styles.title}>Укупно</Text>
+          <Text style={styles.count}>{totalPrice} Дин</Text>
         </View>
-        <LongButton title={'Оформить заказ'} color={COLORS.lightBg} onPress={paymentHandler} />
+        <LongButton title={'Наручите'} color={COLORS.lightBg} onPress={paymentHandler} />
       </View>
     )
   } else {
@@ -50,10 +50,10 @@ const RootBasket = () => {
         <LayoutMain>
           <View style={styles.contentBox}>
             <Image style={styles.image} source={require('../../../assets/images/dev/logo/basketImage.png')} />
-            <Text style={styles.description}>В вашей корзине нет товаров</Text>
+            <Text style={styles.description}>Ваша корпа нема робу</Text>
           </View>
         </LayoutMain>
-        <LongButton title={'Вернуться в меню'} color={COLORS.lightBg} onPress={goCart} />
+        <LongButton title={'Повратак на мени'} color={COLORS.lightBg} onPress={goCart} />
       </View>)
 
   }

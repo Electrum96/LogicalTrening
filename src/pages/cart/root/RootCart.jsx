@@ -12,12 +12,9 @@ import ProductItem from '../productItem/ProductItem';
 import productStore from '../../../store/productStore';
 import filterButtons from '../../../assets/data/filterButtons';
 
-
-
 const RootCart = () => {
 
   const { productFiltered } = productStore;
- 
 
   const styles = useStyleRootCart();
   return (
@@ -30,7 +27,6 @@ const RootCart = () => {
           <List data={productFiltered} Component={ProductItem} />
         </ScrollView>
       </LayoutMain>
-
     </View>
   );
 };

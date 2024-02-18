@@ -27,7 +27,7 @@ export const ROUTES_CONFIG = {
   cart: {
     id: 1,
     name: 'RootCart',
-    title: 'Меню',
+    title: 'Мени',
     isShow: true,
     isEvent: false,
     icon: 'utensils',
@@ -38,7 +38,7 @@ export const ROUTES_CONFIG = {
   reserve: {
     id: 2,
     name: 'RootReserve',
-    title: 'Резерв',
+    title: 'Резерва',
     icon: 'user-tie',
     isShow: true,
     isEvent: false,
@@ -48,7 +48,7 @@ export const ROUTES_CONFIG = {
   events: {
     id: 3,
     name: 'RootEvents',
-    title: 'События',
+    title: 'Догађаји',
     icon: 'calendar-days',
     isShow: true,
     isEvent: false,
@@ -59,7 +59,7 @@ export const ROUTES_CONFIG = {
   translation:{
     id:4,
     name: 'RootTranslation',
-    title: 'Трансляции',
+    title: 'Трансляције',
     icon: 'futbol',
     component: RootTranslation,
     isShow: true,
@@ -69,7 +69,7 @@ export const ROUTES_CONFIG = {
   contacts:{
     id:5,
     name: 'RootContacts',
-    title: 'Контакты',
+    title: 'Контакти',
     icon: 'address-book',
     component: ContactsPage,
     isShow: true,
