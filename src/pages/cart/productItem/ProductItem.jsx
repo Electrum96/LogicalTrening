@@ -10,7 +10,7 @@ import productStore from '../../../store/productStore';
 import { COLORS } from '../../../assets/styles/variables';
 
 const ProductItem = ({title, image, desc, price, id, inBasket, count}) => {
-  const {add, remove, increment,decrement} = productStore;
+  const {add, remove} = productStore;
   const handlerRemove = () => remove(id);
   const handlerAdd = () => add(id);
 
@@ -20,7 +20,7 @@ const ProductItem = ({title, image, desc, price, id, inBasket, count}) => {
       <Image style={styles.image} source={image} />
       <View style={styles.box}>
         <View style={styles.contentWrap}>
-          <Text style={styles.title} numberOfLines={1}>
+          <Text style={styles.title} numberOfLines={2}>
             {title}
           </Text>
           <Text style={styles.desc} numberOfLines={3}>
@@ -29,7 +29,7 @@ const ProductItem = ({title, image, desc, price, id, inBasket, count}) => {
         </View>
         <View style={styles.footer}>
           {!inBasket?
-          <Text style={styles.price}>{price}$</Text> : <Counter count={count} id={id}/>}
+          <Text style={styles.price}>{price} дин</Text> : <Counter count={count} id={id}/>}
           <ButtonIcon
             icon={'shopping-cart'}
             color={inBasket? COLORS.yelBgc : COLORS.dark}

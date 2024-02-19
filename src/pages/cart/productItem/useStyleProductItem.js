@@ -4,7 +4,7 @@ import { COLORS } from '../../../assets/styles/variables';
 function useStyleProductItem() {
     const styles = StyleSheet.create({
         wrapper: {
-            height: 170,
+            flex: 1,
             flexDirection: 'row',
             gap: 10,
             borderTopWidth: 2,

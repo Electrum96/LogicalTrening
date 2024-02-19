@@ -28,7 +28,7 @@ function useStyleRootBasket() {
             justifyContent: 'center',
             alignItems: 'flex-end',
             height: '10%',
-            width: '30%',
+            width: '35%',
             alignSelf: 'flex-end',
             borderTopLeftRadius: 15,
             borderBottomLeftRadius: 15,
@@ -42,7 +42,7 @@ function useStyleRootBasket() {
             fontWeight: '700',
             color: COLORS.dark,
             borderBottomWidth: 2,
-            width: 90
+            width: '80%'
         },
 
         count: {

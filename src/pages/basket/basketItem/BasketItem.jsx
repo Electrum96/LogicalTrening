@@ -19,7 +19,7 @@ const BasketItem = ({ count, title, price, id }) => {
       <View style={styles.btnWrap}>
         <ButtonIcon icon={'xmark'} size={20} onPress={() => remove(id)} />
         <View style={styles.priceWrapper}>
-        <Text style={styles.price}>{price * count}$</Text>
+        <Text style={styles.price}>{price * count} дин</Text>
         </View>
       </View>
     </View>

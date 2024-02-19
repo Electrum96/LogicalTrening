@@ -39,7 +39,7 @@ const RootBasket = () => {
         </LayoutMain>
         <View style={styles.footer}>
           <Text style={styles.title}>Укупно</Text>
-          <Text style={styles.count}>{totalPrice} Дин</Text>
+          <Text style={styles.count}>{totalPrice} дин</Text>
         </View>
         <LongButton title={'Наручите'} color={COLORS.lightBg} onPress={paymentHandler} />
       </View>
