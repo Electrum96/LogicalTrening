@@ -3,10 +3,9 @@ const COLORS = {
     accentBg: "#fbc229",
     lightGreen: "#b2d1bc",
 
-    light: "#FFF",
-    white: '#ffffff',
+    white: "#ffffff",
     dark: "#000000",
-    blue: "#00bbdc"
+    grey: "#b9b7b5"
   
 }
 

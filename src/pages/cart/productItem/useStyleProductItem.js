@@ -1,49 +1,60 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import { COLORS } from '../../../assets/styles/variables';
 
-function useStyleProductItem () {
+function useStyleProductItem() {
     const styles = StyleSheet.create({
-        wrapper:{
-           flex: 1,
-           flexBasis: '40%',
-           gap: 5,
-           justifyContent: 'space-between',
-           backgroundColor: 'red'
-        
-        },
-        image:{
-            width: "100%",
-            height: 150
-        },
-        box:{
-            flex: 1,
-            justifyContent: 'space-between'
-        },
-        contentWrap:{
-            padding: 8,
-            
+        wrapper: {
+            height: 140,
+            width: '100%',
+            paddingHorizontal: 5,
+            gap: 10,
+            flexDirection: 'row',
+            alignItems: 'center',
+            borderBottomWidth: 1,
+            borderColor: COLORS.grey,
+            backgroundColor: 'red'
 
         },
-        title:{
-            textAlign: 'center',
+        image: {
+            width: "30%",
+            height: "75%",
+            borderRadius: 50
+        },
+        box: {
+            flex: 1,
+            flexDirection: 'column',
+            backgroundColor: 'violet',
+            width: '30%'
+        },
+        contentWrap: {
+            flexDirection: 'column',
+            padding: 8,
+
+        },
+        title: {
+            textAlign: 'left',
             fontWeight: '700',
             marginBottom: 5,
             color: COLORS.dark,
             fontSize: 15
         },
-        footer:{
+        footer: {
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignItems: 'center',
             padding: 8
         },
-        desc:{
-            marginBottom: 10,
-            color: COLORS.dark
+
+        priceWrapper: {
+            width: '25%',
+            backgroundColor: COLORS.accentGreen,
+            borderRadius: 10
         },
-        price:{
-            color: COLORS.dark,
-            fontSize: 20
+
+        price: {
+            textAlign: 'center',
+            color: COLORS.white,
+            fontSize: 15
         }
     });
 

@@ -4,7 +4,7 @@ import useStyleButtonIcon from './useStyleButtonIcon';
 
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
-const ButtonIcon = ({color, icon, onPress, size = 30}) => {
+const ButtonIcon = ({color, icon, onPress, size = 20}) => {
 
 const styles = useStyleButtonIcon();
     return (

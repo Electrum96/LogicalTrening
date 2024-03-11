@@ -7,7 +7,9 @@ function useStyleRootCart () {
             flexDirection: 'column',
             flexWrap: 'wrap',
             paddingVertical: 10,
-            gap: 20
+            gap: 20,
+            borderBottomWidth: 2,
+            borderColor: 'red'
         },
         buttonsListWrap:{
             width: '100%',
@@ -16,8 +18,6 @@ function useStyleRootCart () {
             alignContent: 'center',
             flexWrap: 'wrap',
             backgroundColor: COLORS.lightGreen,
-            borderBottomWidth: 1,
-            borderBottomLeftRadius: 10,
             gap: 10,
             paddingTop: 10
         },

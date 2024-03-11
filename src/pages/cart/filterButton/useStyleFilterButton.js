@@ -8,7 +8,6 @@ function useStyleFilterButton() {
             width: 150,
             backgroundColor: COLORS.accentGreen,
             borderRadius: 12,
-         
             alignItems: 'center',
             justifyContent: 'center',
             paddingHorizontal: 5
