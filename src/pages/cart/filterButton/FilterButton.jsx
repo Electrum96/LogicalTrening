@@ -6,9 +6,9 @@ import productStore from '../../../store/productStore';
 
 
 const FilterButton = ({title, classTab}) => {
-const styles = useStyleFilterButton();
-
 const {filterProduct} = productStore;
+
+const styles = useStyleFilterButton();
     return (
         <TouchableOpacity onPress={() => filterProduct(classTab)}>
         <View style={styles.buttonWrap}>

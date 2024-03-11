@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import { COLORS } from '../../assets/styles/variables';
 
 function useStyleHeader () {
     const styles = StyleSheet.create({
@@ -6,7 +7,8 @@ function useStyleHeader () {
             flexDirection: 'row',
             justifyContent: 'space-between',
             paddingVertical: 10,
-            alignItems: 'center'
+            alignItems: 'center',
+            backgroundColor: COLORS.accentGreen
         }
         
     });

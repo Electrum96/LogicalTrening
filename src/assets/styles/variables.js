@@ -1,7 +1,7 @@
 const COLORS = {
     accentGreen: "#166a32",
     accentBg: "#fbc229",
-    lightBg: "#ffeeda",
+    lightGreen: "#b2d1bc",
 
     light: "#FFF",
     white: '#ffffff',

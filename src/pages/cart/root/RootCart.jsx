@@ -17,8 +17,7 @@ const RootCart = () => {
  
   const styles = useStyleRootCart();
   return (
-    <LayoutMain title={'Продукты'}>
-      <Text>RootCart</Text>
+    <LayoutMain>
       <ScrollView horizontal={true} contentContainerStyle={styles.buttonsListWrap}>
         <List data={filterButtons} Component={FilterButton}/>
       </ScrollView>

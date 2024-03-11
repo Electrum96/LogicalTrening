@@ -1,16 +1,25 @@
 import {StyleSheet} from 'react-native';
+import { COLORS } from '../../../assets/styles/variables';
 
 function useStyleRootCart () {
     const styles = StyleSheet.create({
         listWrap:{
-            flexDirection: 'row',
+            flexDirection: 'column',
             flexWrap: 'wrap',
-            paddingVertical: 20,
+            paddingVertical: 10,
             gap: 20
         },
         buttonsListWrap:{
-            paddingVertical: 20,
-            gap: 20
+            width: '100%',
+            height: '80%',
+            flexDirection:'column',
+            alignContent: 'center',
+            flexWrap: 'wrap',
+            backgroundColor: COLORS.lightGreen,
+            borderBottomWidth: 1,
+            borderBottomLeftRadius: 10,
+            gap: 10,
+            paddingTop: 10
         },
       
         

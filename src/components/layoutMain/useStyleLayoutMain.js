@@ -10,7 +10,6 @@ function useStyleLayoutMain () {
     
         },
         main: {
-       
             flex: 1
         }
         

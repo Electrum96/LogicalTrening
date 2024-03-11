@@ -18,7 +18,8 @@ import {
     faCakeCandles,
     faBowlFood,
     faStroopwafel,
-    faMinus
+    faMinus,
+    faHome
   } from '@fortawesome/free-solid-svg-icons';
   import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -42,5 +43,6 @@ import {
     faCakeCandles,
     faBowlFood,
     faStroopwafel,
-    faMinus
+    faMinus,
+    faHome
   );
