@@ -4,7 +4,7 @@ import { COLORS } from '../../../assets/styles/variables';
 function useStyleItemHome () {
     const styles = StyleSheet.create({
         itemWrap:{
-            backgroundColor: 'blue',
+            backgroundColor: COLORS.accentGreen,
             alignItems: 'center',
             padding: 10,
             borderRadius: 8
@@ -13,7 +13,7 @@ function useStyleItemHome () {
         title:{
             fontSize: 20,
             fontWeight: '800',
-            color: COLORS.dark
+            color: COLORS.white
         }
         
     });

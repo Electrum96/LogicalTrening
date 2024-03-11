@@ -10,16 +10,24 @@ export const ROUTES_CONFIG = {
     title: 'Главная',
     isShow: false,
     component: RootHome,
-    options: {headerShown: false},
+    options: { headerShown: false },
   },
 
   cart: {
-    id: 2,
+    id: 1,
     name: 'Cart',
     title: 'Меню продуктов',
     isShow: true,
     component: RootCart,
-    options: {headerShown: false},
+    options: { headerShown: false },
+  },
+  checking: {
+    id: 2,
+    name: 'Checking',
+    title: 'Бронь столика',
+    component: RootTranslation, //компонет брони
+    isShow: true,
+    options: { headerShown: false }
   },
 
   basket: {
@@ -28,16 +36,32 @@ export const ROUTES_CONFIG = {
     title: 'Корзина',
     isShow: true,
     component: RootBasket,
-    options: {headerShown: false},
+    options: { headerShown: false },
   },
 
-  translation:{
-    id:4,
+  translation: {
+    id: 4,
     name: 'Translation',
     title: 'Трансляции',
     component: RootTranslation,
     isShow: true,
-    options: {headerShown: false}
+    options: { headerShown: false }
+  },
+  celebrations: {
+    id: 5,
+    name: 'Celebrations',
+    title: 'События',
+    component: RootTranslation, //компонет события
+    isShow: true,
+    options: { headerShown: false }
+  },
+  numbers: {
+    id: 6,
+    name: 'Numbers',
+    title: 'Контакты',
+    component: RootTranslation, //компонет контакты
+    isShow: true,
+    options: { headerShown: false }
   }
 };
 
