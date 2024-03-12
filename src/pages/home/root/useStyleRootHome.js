@@ -6,33 +6,36 @@ function useStyleRootHome () {
         pageWrapper:{
             width: Dimensions.get('window').width,
             height: Dimensions.get('window').height,
-            backgroundColor: COLORS.backgrounColor
+            backgroundColor: COLORS.backgrounColor,
+            justifyContent: 'space-between'
         },
+        logoWrapper:{   
+            backgroundColor: COLORS.accentGreen,  
+            borderBottomRightRadius: 30,
+            borderBottomLeftRadius: 30,       
+            height: '20%',
+            alignItems: 'center',
+            justifyContent: 'center'
+        },
+        logo:{
+           width: '60%',
+           height: 60
+        },
+
         listWrap:{
             gap: 10,
             alignItems:'center',
             marginVertical: 20
         },
        
-        logoWrapper:{
-            backgrounColor: COLORS.accentGreen,
-            height: 100,
-            backgrounColor: 'red',
-            alignItems: 'center',
-            justifyContent: 'center',
-            borderColor: 'yellow',
-          
-        },
-        logo:{
-            width: '65%',
-            height: 65
-           
-        },
+      
         footer:{
+            backgroundColor: COLORS.accentGreen,
+            borderTopRightRadius: 30,
+            borderTopLeftRadius: 30,
             width: "100%",
-            height: "20%",
-            backgrounColor: COLORS.accentGreen,
-            justifyContent: 'flex-end',
+            height: "15%",
+            justifyContent: 'center',
             alignItems: 'center'
         },
         image:{
