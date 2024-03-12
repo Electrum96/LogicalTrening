@@ -1,12 +1,12 @@
 import {Dimensions, StyleSheet} from 'react-native';
 import { COLORS } from '../../assets/styles/variables';
 
-function useStyleLayoutMain () {
+function useStyleLayoutMain (color) {
     const styles = StyleSheet.create({
         layout:{
             width: Dimensions.get('window').width,
             height: Dimensions.get('window').height,
-            backgroundColor: COLORS.backgrounColor,
+            backgroundColor: color,
             flex: 1,
             justifyContent: 'space-between'
         },

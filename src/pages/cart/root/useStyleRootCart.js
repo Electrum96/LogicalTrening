@@ -13,7 +13,8 @@ function useStyleRootCart () {
         },
         buttonsListWrap:{
             width: '100%',
-            height: '80%',
+            height: '90%',
+            borderBottomLeftRadius: 20,
             flexDirection:'column',
             alignContent: 'center',
             flexWrap: 'wrap',

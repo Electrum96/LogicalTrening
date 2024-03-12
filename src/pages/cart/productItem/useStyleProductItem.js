@@ -29,7 +29,7 @@ function useStyleProductItem() {
             textAlign: 'left',
             fontWeight: '700',
             color: COLORS.dark,
-            fontSize: 15
+            fontSize: 20
         },
         footer: {
             flexDirection: 'row',

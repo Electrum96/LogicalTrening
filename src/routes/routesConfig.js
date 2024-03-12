@@ -1,6 +1,7 @@
 import RootBasket from '../pages/basket/rootBasket/RootBasket';
 import RootCart from '../pages/cart/root/RootCart';
 import RootHome from '../pages/home/root/RootHome';
+import ReservePage from '../pages/reserve/ReservePage';
 import RootTranslation from '../pages/translation/root/RootTranslation';
 
 export const ROUTES_CONFIG = {
@@ -25,7 +26,7 @@ export const ROUTES_CONFIG = {
     id: 2,
     name: 'Checking',
     title: 'Бронь столика',
-    component: RootTranslation, //компонет брони
+    component: ReservePage, 
     isShow: true,
     options: { headerShown: false }
   },

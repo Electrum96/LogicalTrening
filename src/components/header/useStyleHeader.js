@@ -8,7 +8,8 @@ function useStyleHeader () {
             justifyContent: 'space-between',
             paddingVertical: 10,
             alignItems: 'center',
-            paddingHorizontal: 20
+            paddingHorizontal: 20,
+            backgroundColor: COLORS.accentGreen
         }
         
     });

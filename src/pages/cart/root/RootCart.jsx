@@ -11,13 +11,14 @@ import ProductItem from '../productItem/ProductItem';
 import {observer} from 'mobx-react-lite';
 import filterButtons from '../../../assets/data/filterButtons';
 import FilterButton from '../filterButton/FilterButton';
+import { COLORS } from '../../../assets/styles/variables';
 
 const RootCart = () => {
   const {productList} = productStore;
  
   const styles = useStyleRootCart();
   return (
-    <LayoutMain>
+    <LayoutMain color={COLORS.backgrounColor}>
       <ScrollView horizontal={true} contentContainerStyle={styles.buttonsListWrap}>
         <List data={filterButtons} Component={FilterButton}/>
       </ScrollView>
