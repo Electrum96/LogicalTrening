@@ -1,13 +1,14 @@
 import {StyleSheet} from 'react-native';
-import { COLORS } from '../../../assets/styles/variables';
+import { COLORS, RADIUS } from '../../../assets/styles/variables';
 
 function useStyleItemHome () {
     const styles = StyleSheet.create({
         itemWrap:{
             backgroundColor: COLORS.accentGreen,
             alignItems: 'center',
-            padding: 10,
-            borderRadius: 8
+            padding: 18,
+            borderRadius: RADIUS.big,
+            width: '65%'
             
         },
         title:{

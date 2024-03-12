@@ -8,7 +8,6 @@ function useStyleHeader () {
             justifyContent: 'space-between',
             paddingVertical: 10,
             alignItems: 'center',
-            backgroundColor: COLORS.accentGreen,
             paddingHorizontal: 20
         }
         

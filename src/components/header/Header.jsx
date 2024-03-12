@@ -23,16 +23,16 @@ const Header = () => {
   return (
     <View style={styles.headerWrap}>
       {isShowBars && (
-        <ButtonIcon color={COLORS.white} icon={'bars'} onPress={goMain} />
+        <ButtonIcon color={COLORS.white} icon={'bars'} size={30} onPress={goMain} />
       )}
       {!isShowBars && (
-        <ButtonIcon color={COLORS.white} icon={'arrow-left'} onPress={goBack} />
+        <ButtonIcon color={COLORS.white} icon={'arrow-left'} size={30} onPress={goBack} />
       )}
 
-      <ButtonIcon color={COLORS.white} icon={'home'} onPress={goMain} />
+      <ButtonIcon color={COLORS.white} icon={'home'} size={30} onPress={goMain} />
 
       {isShowBasket && (
-        <ButtonIcon color={COLORS.white} icon={'shopping-cart'} onPress={goBasket} />
+        <ButtonIcon color={COLORS.white} size={30} icon={'shopping-cart'} onPress={goBasket} />
       )}
     </View>
   );

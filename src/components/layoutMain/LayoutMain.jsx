@@ -13,9 +13,7 @@ const LayoutMain = ({ children}) => {
                 <Container full={true}>{children}</Container>
             </View>
             <View style={styles.header}>
-                <Container >
                     <Header />
-                </Container>
             </View>
         </View>
     )
