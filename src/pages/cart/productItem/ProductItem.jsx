@@ -20,7 +20,7 @@ const ProductItem = ({ title, image, weight, price, id, inBasket }) => {
       <Image style={styles.image} source={image} />
        <View style={styles.box}>
         <Text style={styles.title} numberOfLines={2} >{title}</Text>
-        <Text style={styles.weight} >{weight}</Text>
+        <Text style={styles.weight} >{weight}г.</Text>
 
         <View style={styles.footer}>
           <View style={styles.priceWrapper}>

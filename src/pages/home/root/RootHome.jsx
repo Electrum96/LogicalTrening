@@ -12,7 +12,7 @@ const RootHome = () => {
   return (
     <View style={styles.pageWrapper}>
       <View style={styles.logoWrapper}>
-        <Image style={styles.logo} source={require('../../../assets/images/decotarion/logoYellow.png')}/>
+        <Image style={styles.logo} source={require('../../../assets/images/decotarion/logoHome.png')}/>
       </View>
 
       <Container>

@@ -11,6 +11,15 @@ function useStyleItemHome () {
             width: '65%'
             
         },
+        boxShadow:{
+            shadowColor: 'black',
+            shadowRadius: 10,
+            shadowOffset: {
+                width: 10,
+                height: 15
+            },
+
+        },
         title:{
             fontSize: 20,
             fontWeight: '800',

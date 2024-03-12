@@ -8,7 +8,7 @@ const ItemHome = ({name, title}) => {
 
   const styles = useStyleItemHome();
   return (
-    <TouchableOpacity style={styles.itemWrap} onPress={() => navigation.push(name)}>
+    <TouchableOpacity style={[styles.itemWrap, styles.boxShadow]} onPress={() => navigation.push(name)}>
       <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );

@@ -12,7 +12,7 @@ function useStyleProductItem() {
             alignItems: 'center',
             borderBottomWidth: 1,
             borderColor: COLORS.grey,
-            backgroundColor: 'red'
+          
 
         },
         image: {
@@ -23,7 +23,6 @@ function useStyleProductItem() {
         box: {
             flex: 1,
             flexDirection: 'column',
-            backgroundColor: 'violet',
             width: '30%'
         },
         contentWrap: {
