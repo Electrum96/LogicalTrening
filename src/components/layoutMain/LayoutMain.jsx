@@ -12,7 +12,7 @@ const LayoutMain = ({ children}) => {
             <View style={styles.main}>
                 <Container full={true}>{children}</Container>
             </View>
-            <View style={styles.header}>
+            <View style={styles.navigation}>
                     <Header />
             </View>
         </View>

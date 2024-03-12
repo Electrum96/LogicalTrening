@@ -7,9 +7,10 @@ function useStyleLayoutMain () {
             flex: 1,
             justifyContent: 'space-between'
         },
-        header:{
-            borderTopRightRadius: 25,
-            borderTopLeftRadius: 25,
+        navigation:{
+            borderTopRightRadius: 30,
+            borderTopLeftRadius: 30,
+            paddingHorizontal: 20,
             height: 70,
             backgroundColor: COLORS.accentGreen,
             justifyContent: 'center'
