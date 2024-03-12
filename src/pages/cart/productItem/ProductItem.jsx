@@ -7,8 +7,9 @@ import ButtonIcon from '../../../components/buttonIcon/ButtonIcon';
 import productStore from '../../../store/productStore';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 import { COLORS } from '../../../assets/styles/variables';
+import Counter from '../../../components/counter/Counter';
 
-const ProductItem = ({ title, image, weight, price, id, inBasket }) => {
+const ProductItem = ({ title, image, weight, price, id, inBasket, count }) => {
   const { add, remove } = productStore;
 
   const handlerRemove = () => remove(id);
@@ -18,21 +19,21 @@ const ProductItem = ({ title, image, weight, price, id, inBasket }) => {
   return (
     <View style={styles.wrapper}>
       <Image style={styles.image} source={image} />
-       <View style={styles.box}>
+      <View style={styles.box}>
         <Text style={styles.title} numberOfLines={2} >{title}</Text>
         <Text style={styles.weight} >{weight}г.</Text>
 
         <View style={styles.footer}>
           <View style={styles.priceWrapper}>
-          <Text style={styles.price}>{price}$</Text>
+            <Text style={styles.price}>{price} $</Text>
           </View>
-          <ButtonIcon
-            icon={inBasket ? 'minus' : 'plus'}
+          {inBasket ? <Counter count={count} id={id} /> : <ButtonIcon
+            icon={'plus'}
             onPress={inBasket ? handlerRemove : handlerAdd}
             color={COLORS.white}
-          />
+          />}
         </View>
-        </View>
+      </View>
     </View>
 
   );

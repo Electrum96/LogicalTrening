@@ -12,9 +12,8 @@ function useStyleProductItem() {
             alignItems: 'center',
             borderBottomWidth: 1,
             borderColor: COLORS.grey,
-          
-
         },
+
         image: {
             width: "30%",
             height: "75%",
@@ -23,17 +22,12 @@ function useStyleProductItem() {
         box: {
             flex: 1,
             flexDirection: 'column',
+            justifyContent: 'flex-start',
             width: '30%'
-        },
-        contentWrap: {
-            flexDirection: 'column',
-            padding: 8,
-
         },
         title: {
             textAlign: 'left',
             fontWeight: '700',
-            marginBottom: 5,
             color: COLORS.dark,
             fontSize: 15
         },
@@ -41,19 +35,22 @@ function useStyleProductItem() {
             flexDirection: 'row',
             justifyContent: 'space-between',
             alignItems: 'center',
-            padding: 8
+            marginTop: 10
         },
 
         priceWrapper: {
-            width: '25%',
+            width: '30%',
+            paddingHorizontal: 5,
             backgroundColor: COLORS.accentGreen,
-            borderRadius: 10
+            borderRadius: 15,
+            justifyContent: 'center'
         },
 
         price: {
             textAlign: 'center',
             color: COLORS.white,
-            fontSize: 15
+            fontSize: 18,
+            fontWeight: '800'
         }
     });
 

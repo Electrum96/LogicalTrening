@@ -2,19 +2,23 @@ import {Text, View, Image, TouchableOpacity} from 'react-native';
 import {observer} from 'mobx-react-lite';
 
 import useStyleCounter from './useStyleCounter';
+import productStore from '../../store/productStore';
 
-const Counter = ({count, increment, decrement}) => {
+
+const Counter = ({count,  id}) => {
+  const {increment, decrement} = productStore;
+ 
   const styles = useStyleCounter();
   return (
     <View style={styles.wrapper}>
-      <TouchableOpacity style={[styles.decrement, styles.button]} onPress={decrement}>
-        <Text>-</Text>
+      <TouchableOpacity style={[styles.decrement, styles.button]} onPress={() => decrement(id)}>
+        <Text style={styles.text}>-</Text>
       </TouchableOpacity>
 
-      <Text>{count}</Text>
+      <Text style={styles.text}>{count}</Text>
       
-      <TouchableOpacity style={[styles.increment, styles.button]} onPress={increment}>
-        <Text>+</Text>
+      <TouchableOpacity style={[styles.increment, styles.button]} onPress={() => increment(id)}>
+        <Text style={styles.text}>+</Text>
       </TouchableOpacity>
     </View>
   );

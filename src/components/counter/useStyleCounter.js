@@ -5,19 +5,22 @@ function useStyleCounter() {
   const styles = StyleSheet.create({
     wrapper: {
       flexDirection: 'row',
-      backgroundColor: COLORS.light,
-     
+      backgroundColor: COLORS.accentGreen,
+      width: 70,
+      padding: 5,
+      borderRadius: 30,
+      justifyContent: 'center',   
     },
+
     button: {
         paddingHorizontal: 5,
     },
 
-    decrement: {
-
-    },
-    increment: {
-
-    },
+    text:{
+      color: COLORS.white,
+      fontSize: 15,
+      fontWeight: '700'
+    }
   });
 
   return styles;
