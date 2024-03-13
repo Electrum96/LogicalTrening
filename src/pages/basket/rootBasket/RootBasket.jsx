@@ -16,7 +16,7 @@ import { ROUTES_CONFIG } from '../../../routes/routesConfig';
 
 const RootBasket = () => {
   const navigation = useNavigation();
-  const goThanks = () => navigation.push(ROUTES_CONFIG.done.name)
+  const goThanks = () => navigation.push(ROUTES_CONFIG.ordered.name)
   const { basketList, totalPrice, clear } = productStore;
 
   function handler() {

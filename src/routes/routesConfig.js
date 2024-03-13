@@ -2,6 +2,7 @@ import RootBasket from '../pages/basket/rootBasket/RootBasket';
 import RootCart from '../pages/cart/root/RootCart';
 import DonePage from '../pages/done/DonePage';
 import RootHome from '../pages/home/root/RootHome';
+import OrderedPage from '../pages/ordered/OrderedPage';
 import ReservePage from '../pages/reserve/ReservePage';
 import RootTranslation from '../pages/translation/root/RootTranslation';
 
@@ -70,6 +71,14 @@ export const ROUTES_CONFIG = {
     name: 'Done',
     title: 'Зарезервировано',
     component: DonePage, 
+    isShow: false,
+    options: { headerShown: false }
+  },
+  ordered: {
+    id: 8,
+    name: 'Ordered',
+    title: 'Заказ принят',
+    component: OrderedPage,  
     isShow: false,
     options: { headerShown: false }
   }

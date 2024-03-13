@@ -3,8 +3,10 @@ import { observer } from 'mobx-react-lite';
 import useStyleDonePage from './useStyleDonePage';
 import LayoutMain from '../../components/layoutMain/LayoutMain';
 import { COLORS } from '../../assets/styles/variables';
+import { useRoute } from '@react-navigation/native';
 
 const DonePage = () => {
+  
 
     const styles = useStyleDonePage();
     return (
