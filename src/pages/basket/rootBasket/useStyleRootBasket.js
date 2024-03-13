@@ -41,6 +41,12 @@ function useStyleRootBasket () {
             color: COLORS.white,
             fontWeight: '700'
         },
+        titleTotal:{
+            fontSize: 22,
+            color: COLORS.dark,
+            fontWeight: '700'
+
+        },
 
         count:{
         fontSize: 20,
@@ -54,9 +60,7 @@ function useStyleRootBasket () {
             
         },
         wrapperTotal:{
-            width: 50,
-            height: 50,
-            backgrounColor: 'red'
+            flex: 1
         },
         container:{
             width: '100%',

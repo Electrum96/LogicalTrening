@@ -11,21 +11,20 @@ function useStyleBasketItem() {
       paddingBottom: 10,
       borderBottomWidth: 3,
       borderBottomColor: COLORS.backgroundSalad,
-      
     },
+
     informWrap: {
-      flexDirection: 'column',
-      justifyContent: 'space-between',
       flex: 1,
       height: '100%',
-      gap: 15
+      gap: 10,
+      paddingBottom: 5
     },
     image: {
       width: '50%',
       height: '100%',
     },
     title: {
-      fontSize: 18,
+      fontSize: 20,
       fontWeight: '700',
       color: COLORS.dark,
     },
@@ -36,6 +35,7 @@ function useStyleBasketItem() {
       gap: 5,
       padding: 5,
     },
+
     price:{
       fontSize: 20,
       color: COLORS.white,

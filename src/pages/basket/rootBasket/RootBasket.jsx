@@ -37,7 +37,7 @@ const RootBasket = () => {
             <List data={basketList} Component={BasketItem} />
           </ScrollView>
           <View style={styles.priceBox}>
-            <Text style={styles.title}>К оплате:</Text>
+            <Text style={styles.titleTotal}>К оплате:</Text>
             <View style={styles.wrapperTotal}>
               <Text style={styles.count}>{totalPrice} $</Text>
             </View>

@@ -14,7 +14,9 @@ const BasketItem = ({count, title, price, id}) => {
   const styles = useStyleBasketItem();
   return (
     <View style={styles.wrapper}>
+      
       <FontAwesomeIcon icon={'star'} color={COLORS.backgroundSalad} size={30}/>
+
       <View style={styles.informWrap}>
       <Text style={styles.title} numberOfLines={2}>{title}</Text>
       <View style={styles.priceBox}>
@@ -25,6 +27,7 @@ const BasketItem = ({count, title, price, id}) => {
       <View style={styles.btnWrap}>
         <Counter count={count} id={id}/>
       </View>
+
     </View>
   );
 };

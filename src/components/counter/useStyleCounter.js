@@ -18,7 +18,7 @@ function useStyleCounter() {
 
     text:{
       color: COLORS.white,
-      fontSize: 15,
+      fontSize: 17,
       fontWeight: '700'
     }
   });
