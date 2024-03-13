@@ -4,7 +4,7 @@ import { COLORS } from '../../assets/styles/variables';
 function useStyleOvalButton() {
 const styles = StyleSheet.create({
     btn:{
-        width: '60%',
+        width: 200,
         height: 55,
         borderRadius: 30,
         backgroundColor: COLORS.yellow,

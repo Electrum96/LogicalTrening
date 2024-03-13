@@ -6,17 +6,16 @@ function useStyleReservePage() {
         contentWrapper: {
             width: Dimensions.get('window').width,
             height: Dimensions.get('window').height,
-            justifyContent: 'space-between'
-          
-        },
+            justifyContent: 'space-between',
+            backgrounColor: COLORS.accentBg
 
+        },
         container: {
             height: '85%',
             width: '100%',
             paddingTop: 20,
-            
-
         },
+
         titleBox: {
             alignSelf: 'center',
             alignItems: 'center',

@@ -30,9 +30,10 @@ class ProductStore {
         const product = this.findProduct(id);
         product.inBasket = true;
     }
-    remove = (id) => {
+    remove = (id, count) => {
         const product = this.findProduct(id);
         product.inBasket = false;
+        count = 0;
     }
 
     filterProduct = (classTab) => {

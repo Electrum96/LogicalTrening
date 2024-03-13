@@ -19,7 +19,6 @@ const ReservePage = () => {
                 <View style={styles.titleBox}>
                     <Text style={styles.title}>Забронируйте Ваш столик </Text>
                 </View>
-
                 <View style={styles.form}>
                     <TextInput style={styles.inputs}>name</TextInput>
                     <TextInput style={styles.inputs}>E-mail</TextInput>
@@ -35,7 +34,6 @@ const ReservePage = () => {
             <View style={styles.headerBox}>
                 <Header />
             </View>
-
             <View />
         </View>
 

@@ -20,7 +20,8 @@ import {
     faStroopwafel,
     faMinus,
     faHome,
-    faBookOpen
+    faBookOpen,
+    faStar
   } from '@fortawesome/free-solid-svg-icons';
   import {library} from '@fortawesome/fontawesome-svg-core';
 
@@ -46,5 +47,6 @@ import {
     faStroopwafel,
     faMinus,
     faHome,
-    faBookOpen
+    faBookOpen,
+    faStar
   );
