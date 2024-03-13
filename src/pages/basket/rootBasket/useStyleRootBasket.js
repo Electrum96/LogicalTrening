@@ -4,8 +4,8 @@ import { COLORS } from '../../../assets/styles/variables';
 function useStyleRootBasket () {
     const styles = StyleSheet.create({
         contentBox:{
-            paddingHorizontal: 15,
-            marginVertical: 20,
+            padding: 15,
+            marginVertical: 10,
             height: '70%',
             backgroundColor: COLORS.backgrounColor,
             justifyContent: 'center',
@@ -17,14 +17,14 @@ function useStyleRootBasket () {
             paddingVertical: 20,
             gap: 30
         },
-        footer:{
+        priceBox:{
             flex: 1,
             position: 'absolute',
             bottom: 10,
             right: 10,
             flexDirection: 'column',
             alignItems: 'flex-end',
-            marginBottom: 20
+          
         },
         titleWrapper: {
             alignSelf: 'center',
@@ -38,17 +38,36 @@ function useStyleRootBasket () {
         },
         title: {
             fontSize: 22,
-            color: COLORS.dark,
+            color: COLORS.white,
             fontWeight: '700'
         },
+
         count:{
         fontSize: 20,
         fontWeight: '700',
         alignSelf: 'center'
         },
+
         buttonWrapper:{
             alignSelf: 'center',
+            marginTop: 10
             
+        },
+        wrapperTotal:{
+            width: 50,
+            height: 50,
+            backgrounColor: 'red'
+        },
+        container:{
+            width: '100%',
+            height: '100%',
+            alignItems: 'center',
+            justifyContent: 'center'
+        },
+
+        image:{
+            width: 200,
+            height: 200
         }
         
     });

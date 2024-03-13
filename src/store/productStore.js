@@ -35,6 +35,13 @@ class ProductStore {
         product.inBasket = false;
         count = 0;
     }
+    clear = () => {
+        this.basketList.forEach(elem => {
+          elem.inBasket = false;
+          elem.count = 1;
+         
+        });
+      };
 
     filterProduct = (classTab) => {
         if (classTab === 'All') { return this.productList } else {

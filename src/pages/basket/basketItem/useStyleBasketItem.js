@@ -8,7 +8,7 @@ function useStyleBasketItem() {
       justifyContent: 'center',
       gap: 20,
       flex: 1,
-      padding: 10,
+      paddingBottom: 10,
       borderBottomWidth: 3,
       borderBottomColor: COLORS.backgroundSalad,
       

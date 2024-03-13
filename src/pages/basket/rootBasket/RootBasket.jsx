@@ -16,29 +16,52 @@ import { ROUTES_CONFIG } from '../../../routes/routesConfig';
 
 const RootBasket = () => {
   const navigation = useNavigation();
-  const goThanks = () =>  navigation.push(ROUTES_CONFIG.done.name)
-  const { basketList, totalPrice } = productStore;
+  const goThanks = () => navigation.push(ROUTES_CONFIG.done.name)
+  const { basketList, totalPrice, clear } = productStore;
+
+  function handler() {
+    goThanks(),
+      clear()
+  }
 
   const styles = useStyleRootBasket();
-  return (
-    <LayoutMain color={COLORS.backgroundSalad}>
-      <View style={styles.titleWrapper}>
-        <Text style={styles.title}>Ваш заказ</Text>
-      </View>
-      <View style={styles.contentBox}>
-        <ScrollView contentContainerStyle={styles.list}>
-          <List data={basketList} Component={BasketItem} />
-        </ScrollView>
-        <View style={styles.footer}>
-          <Text style={styles.title}>К оплате:</Text>
-          <Text style={styles.count}>{totalPrice} $</Text>
+
+  if (basketList.length > 0) {
+    return (
+      <LayoutMain color={COLORS.backgroundSalad}>
+        <View style={styles.titleWrapper}>
+          <Text style={styles.title}>Ваш заказ</Text>
         </View>
-      </View>
-      <View style={styles.buttonWrapper}>
-      <OvalButton title={'Подтвердить'} onPress={goThanks}/>
-      </View>
-    </LayoutMain>
-  );
+        <View style={styles.contentBox}>
+          <ScrollView contentContainerStyle={styles.list}>
+            <List data={basketList} Component={BasketItem} />
+          </ScrollView>
+          <View style={styles.priceBox}>
+            <Text style={styles.title}>К оплате:</Text>
+            <View style={styles.wrapperTotal}>
+              <Text style={styles.count}>{totalPrice} $</Text>
+            </View>
+          </View>
+        </View>
+        <View style={styles.buttonWrapper}>
+          <OvalButton title={'Подтвердить'} onPress={handler} />
+        </View>
+      </LayoutMain>
+
+    );
+  } else {
+    return (
+    <LayoutMain color={COLORS.backgroundSalad}>
+        <View style={styles.container}>
+          <Image style={styles.image} source={require('../../../assets/images/decotarion/bags.png')}/>
+          <View style={styles.titleWrapper}>
+            <Text style={styles.title}>Ваша корзина пуста</Text>
+          </View>
+        </View>
+      </LayoutMain>
+    )
+  }
+
 };
 
 export default observer(RootBasket);
