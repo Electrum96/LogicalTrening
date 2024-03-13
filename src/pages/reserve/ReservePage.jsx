@@ -1,16 +1,19 @@
 import { Text, View, Image, TextInput } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import OvalButton from '../../components/ovalButton/OvalButton';
-import LayoutMain from '../../components/layoutMain/LayoutMain';
+
 import useStyleReservePage from './useStyleReservePage';
-import { COLORS } from '../../assets/styles/variables';
+
 import Header from '../../components/header/Header';
+import { useNavigation } from '@react-navigation/native';
+import { ROUTES_CONFIG } from '../../routes/routesConfig';
 
 const ReservePage = () => {
+    const navigation = useNavigation();
+    const goDone = () =>  navigation.push(ROUTES_CONFIG.done.name)
 
     const styles = useStyleReservePage();
     return (
-
         <View style={styles.contentWrapper}>
             <View style={styles.container}>
                 <View style={styles.titleBox}>
@@ -26,13 +29,16 @@ const ReservePage = () => {
                 </View>
 
                 <View style={styles.buttonBox}>
-                    <OvalButton title={'Забронировать'} />
+                    <OvalButton title={'Забронировать'} onPress={goDone} />
                 </View>
             </View>
-            <Header />
-            <View />
+            <View style={styles.headerBox}>
+                <Header />
             </View>
 
-            )
+            <View />
+        </View>
+
+    )
 }
-            export default observer(ReservePage);
+export default observer(ReservePage);

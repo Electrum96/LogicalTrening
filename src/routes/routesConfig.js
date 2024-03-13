@@ -1,5 +1,6 @@
 import RootBasket from '../pages/basket/rootBasket/RootBasket';
 import RootCart from '../pages/cart/root/RootCart';
+import DonePage from '../pages/done/DonePage';
 import RootHome from '../pages/home/root/RootHome';
 import ReservePage from '../pages/reserve/ReservePage';
 import RootTranslation from '../pages/translation/root/RootTranslation';
@@ -62,6 +63,14 @@ export const ROUTES_CONFIG = {
     title: 'Контакты',
     component: RootTranslation, //компонет контакты
     isShow: true,
+    options: { headerShown: false }
+  },
+  done: {
+    id: 7,
+    name: 'Done',
+    title: 'Зарезервировано',
+    component: DonePage, 
+    isShow: false,
     options: { headerShown: false }
   }
 };

@@ -9,7 +9,10 @@ function useStyleHeader () {
             paddingVertical: 10,
             alignItems: 'center',
             paddingHorizontal: 20,
-            backgroundColor: COLORS.accentGreen
+            backgroundColor: COLORS.accentGreen,
+            
+
+            
         }
         
     });
