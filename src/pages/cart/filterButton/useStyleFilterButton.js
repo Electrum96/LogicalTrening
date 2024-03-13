@@ -4,7 +4,7 @@ import { COLORS } from '../../../assets/styles/variables';
 function useStyleFilterButton() {
     const styles = StyleSheet.create({
         buttonWrap: {
-            height: 30,
+            height: 40,
             width: 150,
             backgroundColor: COLORS.accentGreen,
             borderRadius: 12,
@@ -13,7 +13,7 @@ function useStyleFilterButton() {
             paddingHorizontal: 5
         },
         title: {
-            fontSize: 17,
+            fontSize: 18,
             color: COLORS.white,
             fontWeight: '500'
         }

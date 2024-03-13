@@ -21,6 +21,18 @@ function useStyleLayoutMain (color) {
         },
         main: {
             flex: 1
+        },
+        listBox:{
+            height: '15%',
+            flexDirection: 'column',
+            flexWrap: 'wrap',
+            alignContent: 'center',
+            borderBottomRightRadius: 20,
+            borderBottomLeftRadius: 20,
+            paddingTop: 10,
+            gap: 10,
+            backgroundColor: COLORS.lightGreen,
+             
         }
         
     });
