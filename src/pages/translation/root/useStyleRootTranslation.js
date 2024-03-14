@@ -1,7 +1,34 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
+import { COLORS } from '../../../assets/styles/variables';
 
 function useStyleRootTranslation() {
    const styles = StyleSheet.create({
+      titleWrapper:{
+         width: '90%',
+         height: 60,
+         paddingVertical: 10,
+         paddingHorizontal: 15,
+         borderColor: COLORS.yellow,
+         borderWidth: 5,
+         alignItems: 'center',
+         alignSelf: 'center',
+         marginVertical: 20
+
+
+      },
+      title:{
+         color: COLORS.white,
+         fontSize: 22,
+         fontWeight: '700'
+      },
+
+      listContainer:{
+         flexDirection: 'row',
+         flexWrap: 'wrap',
+         gap: 20,
+         alignItems: 'center',
+         justifyContent: 'center'
+      }
 
    });
 

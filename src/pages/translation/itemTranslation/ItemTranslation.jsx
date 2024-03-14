@@ -1,16 +1,24 @@
 import { Text, View, Image } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import useStyleItemTranslation from './useStyleItemTranslation';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { COLORS } from '../../../assets/styles/variables';
 
-const ItemTranslation = ({time, team1, team2, liga}) => {
+const ItemTranslation = ({ time, team1, team2, liga, date }) => {
 
-    const styles = useStyleItemTranslation;
+    const styles = useStyleItemTranslation();
     return (
         <View style={styles.container}>
-            <Text>{time}</Text>
-            <Text>{team1}</Text>
-            <Text>{team2}</Text>
-            <Text>{liga}</Text>
+            <View  style={styles.wrapper}>
+                <FontAwesomeIcon icon={'star'} color={COLORS.darkStar} size={35}/>
+                <View style={styles.teamBox}>
+                <Text style={styles.team} numberOfLines={2}>{team1}</Text>
+                <Text style={styles.team} numberOfLines={2}>{team2}</Text>
+                </View>
+            </View>
+            <Text style={styles.date}>{date}.03.2024</Text>
+            <Text style={styles.time}>{time}</Text>
+           
         </View>
     )
 }

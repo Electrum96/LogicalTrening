@@ -8,7 +8,8 @@ const COLORS = {
 
     white: "#ffffff",
     dark: "#000000",
-    grey: "#b9b7b5"
+    grey: "#b9b7b5",
+    darkStar: "#a39a31"
   
 }
 
