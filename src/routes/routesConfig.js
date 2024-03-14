@@ -1,6 +1,11 @@
 import RootBasket from '../pages/basket/rootBasket/RootBasket';
 import RootCart from '../pages/cart/root/RootCart';
 import DonePage from '../pages/done/DonePage';
+import EventArt from '../pages/events/eventArt/EventArt';
+import EventBreakfast from '../pages/events/eventBreakfast/EventBreakfast';
+import EventsFest from '../pages/events/eventFest/EventsFest';
+import EventHockey from '../pages/events/eventHockey/EventHockey';
+import EventsPage from '../pages/events/eventsPageRoot/EventsPage';
 import RootHome from '../pages/home/root/RootHome';
 import OrderedPage from '../pages/ordered/OrderedPage';
 import ReservePage from '../pages/reserve/ReservePage';
@@ -54,7 +59,7 @@ export const ROUTES_CONFIG = {
     id: 5,
     name: 'Celebrations',
     title: 'События',
-    component: RootTranslation, //компонет события
+    component: EventsPage, 
     isShow: true,
     options: { headerShown: false }
   },
@@ -79,6 +84,38 @@ export const ROUTES_CONFIG = {
     name: 'Ordered',
     title: 'Заказ принят',
     component: OrderedPage,  
+    isShow: false,
+    options: { headerShown: false }
+  },
+  fest: {
+    id: 9,
+    name: 'EventFest',
+    title: 'EventFest',
+    component: EventsFest,  
+    isShow: false,
+    options: { headerShown: false }
+  },
+  breakfast: {
+    id: 10,
+    name: 'EventBreakfast',
+    title: 'EventBreakfast',
+    component: EventBreakfast,  
+    isShow: false,
+    options: { headerShown: false }
+  },
+  hockey: {
+    id: 11,
+    name: 'EventHockey',
+    title: 'EventHockey',
+    component: EventHockey,  
+    isShow: false,
+    options: { headerShown: false }
+  },
+  art: {
+    id: 12,
+    name: 'EventArt',
+    title: 'EventArt',
+    component: EventArt,  
     isShow: false,
     options: { headerShown: false }
   }
