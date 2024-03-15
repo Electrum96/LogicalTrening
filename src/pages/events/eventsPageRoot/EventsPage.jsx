@@ -13,9 +13,11 @@ const EventsPage = () => {
     return (
         <LayoutMain color={COLORS.backgroundSalad}>
             <View style={styles.titleWrapper}>
-                <Text style={styles.title}>Спортивные трансляции</Text>
+                <Text style={styles.title}>Ближайшие события</Text>
             </View>
+            <View style={styles.listWrapper}>
             <List data={events} Component={CelebrateItem}/>
+            </View>
         </LayoutMain>
     )
 }

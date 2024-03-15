@@ -5,20 +5,31 @@ import { useNavigation } from '@react-navigation/native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { COLORS } from '../../assets/styles/variables';
 
-const CelebrateItem = ({ title, date, route }) => {
+const CelebrateItem = ({ title, date, route, id }) => {
     const navigation = useNavigation();
 
     const styles = useStyleCelebrateItem();
-    return (
-        <View style={styles.main}>
-        <TouchableOpacity style={styles.container} onPress={() => navigation.push(route)}>
-            <View style={styles.contentBox}>
-                <Text>{title}</Text>
-                <Text>{date}</Text>
-            </View>
-            <FontAwesomeIcon icon={'star'} color={COLORS.backgroundSalad} size={50} />
-        </TouchableOpacity>
-        </View>
-    )
+
+    if (id % 2 == 0) {
+        return (
+            <TouchableOpacity style={styles.container} onPress={() => navigation.push(route)}>
+                <FontAwesomeIcon style={styles.star} transform={"rotate-90"} icon={'star'}  color={COLORS.backgroundSalad} size={50} />
+                <View style={styles.contentBox}>
+                    <Text style={styles.title}>{title}</Text>
+                    <Text style={styles.date}>{date}</Text>
+                </View>
+            </TouchableOpacity>
+        )
+    } else {
+        return (
+            <TouchableOpacity style={styles.container} onPress={() => navigation.push(route)}>
+                <View style={styles.contentBox}>
+                    <Text style={styles.title}>{title}</Text>
+                    <Text style={styles.date}>{date}</Text>
+                </View>
+                <FontAwesomeIcon style={styles.star} transform={"rotate-90"} icon={'star'} color={COLORS.backgroundSalad} size={50} />
+            </TouchableOpacity>
+        )
+    }
 }
 export default observer(CelebrateItem);

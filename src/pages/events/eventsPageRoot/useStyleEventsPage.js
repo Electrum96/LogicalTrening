@@ -20,6 +20,12 @@ const styles = StyleSheet.create({
         color: COLORS.white,
         fontSize: 22,
         fontWeight: '700'
+     },
+     listWrapper:{
+      width: '100%',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 20
      }
 
 
