@@ -1,23 +1,27 @@
 const filterButtons = [
     {
-        title: 'Breakfast',
+        title: 'Закуски',
         id: 1,
-        classTab: 'Breakfast'
+        classTab: 'Snack',
+        isActive: false
     },
     {
-        title: 'Lunch',
+        title: 'Основные блюда',
         id: 2,
-        classTab: 'Lunch'
+        classTab: 'Main',
+        isActive: false
     },
     {
-        title: 'Dinner',
+        title: 'Десерты',
         id: 3,
-        classTab: 'Dinner'
+        classTab: 'Desert',
+        isActive: false
     },
     {
-        title: 'All',
+        title: 'Напитки',
         id: 4,
-        classTab: 'All'
+        classTab: 'Drinks',
+        isActive: false
     }
 ]
 

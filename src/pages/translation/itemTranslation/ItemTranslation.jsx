@@ -4,7 +4,7 @@ import useStyleItemTranslation from './useStyleItemTranslation';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { COLORS } from '../../../assets/styles/variables';
 
-const ItemTranslation = ({ time, team1, team2, liga, date }) => {
+const ItemTranslation = ({ time, team1, team2,  date }) => {
 
     const styles = useStyleItemTranslation();
     return (

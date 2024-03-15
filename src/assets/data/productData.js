@@ -5,7 +5,7 @@ const PRODUCT_DATA = [
     price: 15,
     image:  require ('../images/dev/DevImage.png'),
     weight: 250,
-    classTab: 'Breakfast',
+    classTab: 'Snack',
   },
   {
     title: 'Sinihomejuusto',
@@ -13,7 +13,7 @@ const PRODUCT_DATA = [
     price: 20,
     image:  require ('../images/dev/DevImage.png'),
     weight: 250,
-    classTab: 'Breakfast',
+    classTab: 'Snack',
   },
   {
     title: 'Cheeseburger Pihviä, juustoa, tomaattia, suolakurkkua, salaatinlehteä. ',
@@ -21,7 +21,7 @@ const PRODUCT_DATA = [
     price: 22,
     image:  require ('../images/dev/DevImage.png'),
     weight: 250,
-    classTab: 'Breakfast',
+    classTab: 'Snack',
   },
   {
     title: 'Chicken BBQ',
@@ -29,7 +29,7 @@ const PRODUCT_DATA = [
     price: 35,
     image:  require ('../images/dev/DevImage.png'),
     weight: 350,
-    classTab: 'Breakfast',
+    classTab: 'Snack',
   },
   {
     title: 'Chickenburger',
@@ -37,7 +37,7 @@ const PRODUCT_DATA = [
     price: 22,
     image:  require ('../images/dev/DevImage.png'),
     weight: 370,
-    classTab: 'Breakfast',
+    classTab: 'Snack',
   },
   {
     title: 'Crabsburger',
@@ -45,7 +45,7 @@ const PRODUCT_DATA = [
     price: 12,
     image:  require ('../images/dev/DevImage.png'),
     weight: 420,
-    classTab: 'Breakfast',
+    classTab: 'Snack',
   },
   {
     title: 'Deer',
@@ -53,7 +53,7 @@ const PRODUCT_DATA = [
     price: 24,
     image:  require ('../images/dev/DevImage.png'),
     weight: 380,
-    classTab: 'Breakfast',
+    classTab: 'Snack',
   },
   {
     title: 'Fresh burger',
@@ -61,15 +61,15 @@ const PRODUCT_DATA = [
     price: 19,
     image:  require ('../images/dev/DevImage.png'),
     weight: 350,
-    classTab: 'Breakfast',
+    classTab: 'Snack',
   },
   {
-    title: 'Farmer’s breakfast',
+    title: 'Farmer’s Snack',
     desc: 'Naudanlihapihvi, cheddaria, kananmunaa, pekonia, BBQ-kastiketta.',
     price: 21,
     image:  require ('../images/dev/DevImage.png'),
     weight: 280,
-    classTab: 'Lunch',
+    classTab: 'Main',
   },
   {
     title: 'Hawaii',
@@ -77,7 +77,7 @@ const PRODUCT_DATA = [
     price: 14,
     image:  require ('../images/dev/DevImage.png'),
     weight: 285,
-    classTab: 'Lunch',
+    classTab: 'Main',
   },
   {
     title: 'LAB',
@@ -85,7 +85,7 @@ const PRODUCT_DATA = [
     price: 24,
     image:  require ('../images/dev/DevImage.png'),
     weight: 285,
-    classTab: 'Lunch',
+    classTab: 'Main',
   },
   {
     title: 'Mexico',
@@ -93,7 +93,7 @@ const PRODUCT_DATA = [
     price: 17,
     image:  require ('../images/dev/DevImage.png'),
     weight: 285,
-    classTab: 'Lunch',
+    classTab: 'Main',
   },
   {
     title: 'Montreal burger',
@@ -101,7 +101,7 @@ const PRODUCT_DATA = [
     price: 23,
     image:  require ('../images/dev/DevImage.png'),
     weight: 250,
-    classTab: 'Lunch',
+    classTab: 'Main',
   },
   {
     title: 'New Mexico',
@@ -109,7 +109,7 @@ const PRODUCT_DATA = [
     price: 17,
     image:  require ('../images/dev/DevImage.png'),
     weight: 250,
-    classTab: 'Lunch',
+    classTab: 'Main',
   },
   {
     title: 'NY Burger',
@@ -117,7 +117,7 @@ const PRODUCT_DATA = [
     price: 23,
     image:  require ('../images/dev/DevImage.png'),
     weight: 250,
-    classTab: 'Lunch',
+    classTab: 'Main',
   },
   {
     title: 'Steakburger',
@@ -125,7 +125,7 @@ const PRODUCT_DATA = [
     price: 24,
     image:  require ('../images/dev/DevImage.png'),
     weight: 460,
-    classTab: 'Lunch',
+    classTab: 'Main',
   },
   {
     title: 'Tofu Burger',
@@ -133,7 +133,7 @@ const PRODUCT_DATA = [
     price: 26,
     image:  require ('../images/dev/DevImage.png'),
     weight: 180,
-    classTab: 'Dinner',
+    classTab: 'Desert',
   },
   {
     title: 'XXXL',
@@ -141,7 +141,7 @@ const PRODUCT_DATA = [
     price: 19,
     image:  require ('../images/dev/DevImage.png'),
     weight: 190,
-    classTab: 'Dinner',
+    classTab: 'Desert',
   },
   {
     title: 'Pork burger',
@@ -149,7 +149,7 @@ const PRODUCT_DATA = [
     price: 15,
     image:  require ('../images/dev/DevImage.png'),
     weight: 180,
-    classTab: 'Dinner',
+    classTab: 'Desert',
   },
   {
     title: 'Tennessee burger',
@@ -157,7 +157,7 @@ const PRODUCT_DATA = [
     price: 21,
     image:  require ('../images/dev/DevImage.png'),
     weight: 200,
-    classTab: 'Dinner',
+    classTab: 'Desert',
   },
   {
     title: 'Sipuligrilli',
@@ -165,7 +165,7 @@ const PRODUCT_DATA = [
     price: 28,
     image:  require ('../images/dev/DevImage.png'),
     weight: 180,
-    classTab: 'Dinner',
+    classTab: 'Desert',
   },
   {
     title: 'Tennessee sandwichs',
@@ -173,7 +173,7 @@ const PRODUCT_DATA = [
     price: 23,
     image:  require ('../images/dev/DevImage.png'),
     weight: 180,
-    classTab: 'Dinner',
+    classTab: 'Desert',
   },
   {
     title: 'Cheddar',
@@ -181,7 +181,7 @@ const PRODUCT_DATA = [
     price: 18,
     image:  require ('../images/dev/DevImage.png'),
     weight: 160,
-    classTab: 'Dinner',
+    classTab: 'Desert',
   },
   {
     title: 'Burger lampaan kanssa',
@@ -189,7 +189,39 @@ const PRODUCT_DATA = [
     price: 27,
     image:  require ('../images/dev/DevImage.png'),
     weight: 190,
-    classTab: 'Dinner',
+    classTab: 'Desert',
+  },
+  {
+    title: 'Drinks',
+    desc: 'Mehukas 100% naudanlihapihvi sulatettuna juustoa, sipulirenkaitasa.',
+    price: 28,
+    image:  require ('../images/dev/DevImage.png'),
+    weight: 180,
+    classTab: 'Drinks',
+  },
+  {
+    title: 'Drinks',
+    desc: 'Kananrintaa Tennesseen glaseerauksessa.',
+    price: 23,
+    image:  require ('../images/dev/DevImage.png'),
+    weight: 180,
+    classTab: 'Drinks',
+  },
+  {
+    title: 'Drinks',
+    desc: 'Hampurilainen naudanlihalla ja cheddarjuustolla',
+    price: 18,
+    image:  require ('../images/dev/DevImage.png'),
+    weight: 160,
+    classTab: 'Drinks',
+  },
+  {
+    title: 'Drinks',
+    desc: 'Burger lampaan cutletilla ja sinihomejuustollas',
+    price: 27,
+    image:  require ('../images/dev/DevImage.png'),
+    weight: 190,
+    classTab: 'Drinks',
   },
 ];
 

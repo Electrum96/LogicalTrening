@@ -8,6 +8,17 @@ class ProductStore {
     }
 
     productListAll = PRODUCT_DATA_ARRAY;
+    filteredData = PRODUCT_DATA_ARRAY;
+
+    filterTitle = {
+        classTab: 'Main'
+    };
+    
+    filterProduct = tab => {
+           this.filteredData = this.productListAll.filter(product => product.classTab === tab.classTab);
+           this.filterTitle = tab;
+    }
+
 
 
     findProduct = (id) => {
@@ -43,12 +54,7 @@ class ProductStore {
         });
       };
 
-    filterProduct = (classTab) => {
-        if (classTab === 'All') { return this.productList } else {
-            return this.productList.filter((product) => product.classTab === classTab)}
-    }
-
-    get productList() { return this.productListAll.filter((product) => true) };
+ 
 
     get basketList() {
         return this.productListAll.filter((product) => product.inBasket)

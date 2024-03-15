@@ -6,7 +6,7 @@ function useStyleCounter() {
     wrapper: {
       flexDirection: 'row',
       backgroundColor: COLORS.accentGreen,
-      width: 70,
+      width: 65,
       padding: 5,
       borderRadius: 30,
       justifyContent: 'center',   
@@ -18,7 +18,7 @@ function useStyleCounter() {
 
     text:{
       color: COLORS.white,
-      fontSize: 17,
+      fontSize: 16,
       fontWeight: '700'
     }
   });

@@ -14,18 +14,13 @@ import FilterButton from '../filterButton/FilterButton';
 import { COLORS } from '../../../assets/styles/variables';
 
 const RootCart = () => {
-  const {productList} = productStore;
+  const {filteredData} = productStore;
  
   const styles = useStyleRootCart();
   return (
     <LayoutMain color={COLORS.backgrounColor}>
-      {/* <View style={styles.listBox}>
-      <ScrollView horizontal={true} contentContainerStyle={styles.buttonsListWrap}>
-        <List data={filterButtons} Component={FilterButton}/>
-      </ScrollView>
-      </View> */}
       <ScrollView contentContainerStyle={styles.listWrap}>
-        <List data={productList} Component={ProductItem} />
+        <List data={filteredData} Component={ProductItem} />
       </ScrollView>
     </LayoutMain>
   );
