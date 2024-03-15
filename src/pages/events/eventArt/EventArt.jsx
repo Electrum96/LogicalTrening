@@ -6,9 +6,7 @@ const EventArt = () => {
 
 
     return (
-        <LayoutEvent>
-
-        </LayoutEvent>
+        <LayoutEvent imageBackground={require('../../../assets/images/dev/art.png')}/>
     )
 }
 export default observer(EventArt);

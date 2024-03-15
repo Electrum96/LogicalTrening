@@ -5,8 +5,7 @@ import LayoutEvent from '../../../components/layoutEvent/LayoutEvent';
 const EventBreakfast = () => {
 
 return (
-<LayoutEvent>
-    
-    </LayoutEvent>
+<LayoutEvent imageBackground={require('../../../assets/images/dev/breakfast.png')}/>
+
 )}
 export default observer(EventBreakfast);

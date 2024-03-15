@@ -5,8 +5,6 @@ import LayoutEvent from '../../../components/layoutEvent/LayoutEvent';
 const EventsFest = () => {
 
 return (
-<LayoutEvent>
-    
-</LayoutEvent>
+<LayoutEvent imageBackground={require('../../../assets/images/dev/fest.png')} />
 )}
 export default observer(EventsFest);

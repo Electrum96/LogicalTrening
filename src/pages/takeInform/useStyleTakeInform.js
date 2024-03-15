@@ -8,10 +8,12 @@ function useStyleTakeInform() {
             height: Dimensions.get('window').height
         },
         form: {
-            width: '100%',
-            height: '100%',
+            width: '90%',
+            height: '50%',
             marginTop: 20,
-            gap: 20   
+            gap: 20,
+            justifyContent: 'center',
+            alignItems: 'center'
         },
         input: {
             width: '80%',
@@ -36,7 +38,6 @@ function useStyleTakeInform() {
             fontSize: 22,
             color: COLORS.white,
             fontWeight: '700'
-
         }
     });
 

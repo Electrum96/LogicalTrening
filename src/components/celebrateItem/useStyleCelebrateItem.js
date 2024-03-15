@@ -5,7 +5,7 @@ function useStyleCelebrateItem() {
 const styles = StyleSheet.create({
     container:{
         height: '18%',
-        width: '80%',
+        width: '90%',
         flexDirection: 'row',
         backgroundColor: COLORS.accentGreen,
         borderRadius: 30,
