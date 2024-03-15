@@ -1,31 +1,8 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import { COLORS } from '../../../assets/styles/variables';
 
-function useStyleRootBasket () {
+function useStyleRootBasket() {
     const styles = StyleSheet.create({
-        contentBox:{
-            padding: 15,
-            marginVertical: 10,
-            height: '70%',
-            backgroundColor: COLORS.backgrounColor,
-            justifyContent: 'center',
-            position: 'relative',
-            borderRadius: 20
-
-        },
-        list:{
-            paddingVertical: 20,
-            gap: 30
-        },
-        priceBox:{
-            flex: 1,
-            position: 'absolute',
-            bottom: 10,
-            right: 10,
-            flexDirection: 'column',
-            alignItems: 'flex-end',
-          
-        },
         titleWrapper: {
             alignSelf: 'center',
             alignItems: 'center',
@@ -41,39 +18,62 @@ function useStyleRootBasket () {
             color: COLORS.white,
             fontWeight: '700'
         },
-        titleTotal:{
+
+        contentBox: {
+            padding: 15,
+            marginVertical: 10,
+            height: '70%',
+            backgroundColor: COLORS.backgrounColor,
+            justifyContent: 'center',
+            position: 'relative',
+            borderRadius: 20
+        },
+
+        list: {
+            paddingVertical: 20,
+            gap: 30
+        },
+        titleTotal: {
             fontSize: 22,
             color: COLORS.dark,
             fontWeight: '700'
-
+        },
+        total: {
+            fontSize: 18,
+            fontWeight: '700',
+            alignSelf: 'center',
+            color: COLORS.white
         },
 
-        count:{
-        fontSize: 20,
-        fontWeight: '700',
-        alignSelf: 'center'
-        },
-
-        buttonWrapper:{
+        buttonWrapper: {
             alignSelf: 'center',
             marginTop: 10
-            
+
         },
-        wrapperTotal:{
-            flex: 1
+        totalBox: {
+            position: 'absolute',
+            bottom: 10,
+            right: 10
+
         },
-        container:{
+        wrapperTotal: {
+            flex: 1,
+            borderRadius: 20,
+            backgroundColor: COLORS.accentGreen
+
+        },
+        container: {
             width: '100%',
             height: '100%',
             alignItems: 'center',
             justifyContent: 'center'
         },
 
-        image:{
+        image: {
             width: 200,
             height: 200
         }
-        
+
     });
 
     return styles;

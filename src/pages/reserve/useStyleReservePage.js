@@ -7,7 +7,7 @@ function useStyleReservePage() {
             width: Dimensions.get('window').width,
             height: Dimensions.get('window').height,
             justifyContent: 'space-between',
-            backgrounColor: COLORS.accentBg
+            backgroundColor: COLORS.backgroundSalad
 
         },
         container: {

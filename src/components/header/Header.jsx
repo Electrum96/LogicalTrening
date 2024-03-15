@@ -18,7 +18,6 @@ const Header = () => {
 
   const { name } = useRoute();
   const isShowBasket = name !== ROUTES_CONFIG.basket.name;
-  const isShowBars = name === ROUTES_CONFIG.cart.name;
 
   const styles = useStyleHeader();
   return (

@@ -1,8 +1,14 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 import { COLORS } from '../../assets/styles/variables';
 
 function useStyleDonePage() {
 const styles = StyleSheet.create({
+    pageWrapper:{
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height,
+        backgroundColor: COLORS.backgrounColor,
+        justifyContent: 'space-between'
+    },
     container:{
         height: '60%',
         justifyContent: 'space-between',
@@ -15,7 +21,7 @@ const styles = StyleSheet.create({
     },
     stars: {
         width: '100%',
-        height: 38,
+        height: 41,
         alignSelf: 'center' ,
         marginBottom: 20  
     },
@@ -36,6 +42,10 @@ const styles = StyleSheet.create({
         color: COLORS.white,
         fontSize: 22,
         fontWeight: '800',
+    },
+    headerWrapper:{
+        height: '10%',
+        backgrounColor: 'red'
     }
 
    });

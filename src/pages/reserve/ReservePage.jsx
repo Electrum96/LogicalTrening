@@ -22,7 +22,7 @@ const ReservePage = () => {
                 <View style={styles.form}>
                     <TextInput style={styles.inputs}>name</TextInput>
                     <TextInput style={styles.inputs}>E-mail</TextInput>
-                    <TextInput style={styles.inputs}>number phone</TextInput>
+                    <TextInput style={styles.inputs}>phone number</TextInput>
                     <TextInput style={styles.inputs}>data time</TextInput>
                     <TextInput style={styles.inputs}>table number</TextInput>
                 </View>

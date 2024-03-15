@@ -1,8 +1,14 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 import { COLORS } from '../../assets/styles/variables';
 
 function useStyleOrderedPage() {
 const styles = StyleSheet.create({
+    pageWrapper:{
+        width: Dimensions.get('window').width,
+        height: Dimensions.get('window').height,
+        backgroundColor: COLORS.backgrounColor,
+        justifyContent: 'space-between'
+    },
     logo:{
         width: 210,
         height: 70,
@@ -15,6 +21,12 @@ const styles = StyleSheet.create({
         alignSelf: 'center' ,
         marginBottom: 20  
     },
+    contentWrapper:{
+        height: '80%',
+        justifyContent: 'flex-end',
+        backgrounColor: 'red'
+    },
+  
     titleBox:{
         width: '100%',
         height: 200,
@@ -27,16 +39,18 @@ const styles = StyleSheet.create({
     },
     code:{
         width: '40%',
-        height: '85%'
+        height: '90%'
     },
     title: {
         fontSize: 20,
         color: COLORS.accentGreen,
         fontWeight: '700'
 
+    },
+    headerWrapper:{
+        height: '10%'
     }
-
-
+  
    });
 
  return styles;

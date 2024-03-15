@@ -4,13 +4,14 @@ import useStyleDonePage from './useStyleDonePage';
 import LayoutMain from '../../components/layoutMain/LayoutMain';
 import { COLORS } from '../../assets/styles/variables';
 import { useRoute } from '@react-navigation/native';
+import Header from '../../components/header/Header';
 
 const DonePage = () => {
   
 
     const styles = useStyleDonePage();
     return (
-        <LayoutMain color={COLORS.backgrounColor}>
+        <View style={styles.pageWrapper}>
             <View style={styles.container}>
             <Image  style={styles.logo} source={require('../../assets/images/decotarion/logoDone.png')} />
             <View style={styles.contentBox}>
@@ -21,8 +22,11 @@ const DonePage = () => {
                 </View>
             </View>
             </View>
+            <View style={styles.headerWrapper}>
+            <Header/>
+            </View>
 
-        </LayoutMain>
+        </View>
     )
 }
 export default observer(DonePage);

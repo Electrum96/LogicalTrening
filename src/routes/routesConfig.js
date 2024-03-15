@@ -9,6 +9,7 @@ import EventsPage from '../pages/events/eventsPageRoot/EventsPage';
 import RootHome from '../pages/home/root/RootHome';
 import OrderedPage from '../pages/ordered/OrderedPage';
 import ReservePage from '../pages/reserve/ReservePage';
+import TakeInform from '../pages/takeInform/TakeInform';
 import RootTranslation from '../pages/translation/root/RootTranslation';
 
 export const ROUTES_CONFIG = {
@@ -67,7 +68,7 @@ export const ROUTES_CONFIG = {
     id: 6,
     name: 'Numbers',
     title: 'Контакты',
-    component: RootTranslation, //компонет контакты
+    component: TakeInform,
     isShow: true,
     options: { headerShown: false }
   },
