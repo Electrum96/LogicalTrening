@@ -58,6 +58,8 @@ function useStyleRootBasket() {
         },
         wrapperTotal: {
             flex: 1,
+            height: 35,
+            justifyContent: 'center',
             borderRadius: 20,
             backgroundColor: COLORS.accentGreen
 
