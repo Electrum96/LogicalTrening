@@ -39,7 +39,7 @@ const RootBasket = () => {
           <View style={styles.totalBox}>
             <Text style={styles.titleTotal}>К оплате:</Text>
             <View style={styles.wrapperTotal}>
-              <Text style={styles.total}>{totalPrice} $</Text>
+              <Text style={styles.total}>{totalPrice} ₽</Text>
             </View>
           </View>
         </View>

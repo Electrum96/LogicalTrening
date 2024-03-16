@@ -9,9 +9,6 @@ import productStore from '../../../store/productStore';
 import ProductItem from '../productItem/ProductItem';
 
 import {observer} from 'mobx-react-lite';
-import filterButtons from '../../../assets/data/filterButtons';
-import FilterButton from '../filterButton/FilterButton';
-import { COLORS } from '../../../assets/styles/variables';
 
 const RootCart = () => {
   const {filteredData} = productStore;

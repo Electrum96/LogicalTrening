@@ -25,7 +25,7 @@ const ProductItem = ({ title, image, weight, price, id, inBasket, count }) => {
 
         <View style={styles.footer}>
           <View style={styles.priceWrapper}>
-            <Text style={styles.price}>{price} $</Text>
+            <Text style={styles.price}>{price} ₽</Text>
           </View>
           {inBasket ? <Counter count={count} id={id} /> : <ButtonIcon
             icon={'plus'}
