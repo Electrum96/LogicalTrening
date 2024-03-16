@@ -11,7 +11,7 @@ const EventsPage = () => {
 
     const styles = useStyleEventsPage();
     return (
-        <LayoutMain color={COLORS.backgroundSalad}>
+        <LayoutMain imageBackground={require('../../../assets/images/dev/bgc.png')}>
             <View style={styles.titleWrapper}>
                 <Text style={styles.title}>Ближайшие события</Text>
             </View>

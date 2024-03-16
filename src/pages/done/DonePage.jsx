@@ -1,4 +1,4 @@
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, ImageBackground } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import useStyleDonePage from './useStyleDonePage';
 import LayoutMain from '../../components/layoutMain/LayoutMain';
@@ -11,7 +11,7 @@ const DonePage = () => {
 
     const styles = useStyleDonePage();
     return (
-        <View style={styles.pageWrapper}>
+        <ImageBackground source={require('../../assets/images/dev/gradient.png')} style={styles.pageWrapper}>
             <View style={styles.container}>
             <Image  style={styles.logo} source={require('../../assets/images/decotarion/logoDone.png')} />
             <View style={styles.contentBox}>
@@ -26,7 +26,7 @@ const DonePage = () => {
             <Header/>
             </View>
 
-        </View>
+        </ImageBackground>
     )
 }
 export default observer(DonePage);

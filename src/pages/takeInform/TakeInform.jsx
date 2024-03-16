@@ -9,7 +9,7 @@ const TakeInform = () => {
 
     const styles = useStyleTakeInform();
     return (
-        <LayoutMain color={COLORS.backgroundSalad}>
+        <LayoutMain imageBackground={require('../../assets/images/dev/bgc.png')}>
             <View style={styles.container}>
                 <View style={styles.titleWrapper}>
                     <Text style={styles.title}>Контакты</Text>

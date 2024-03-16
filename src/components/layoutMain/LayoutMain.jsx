@@ -1,4 +1,4 @@
-import { Text, View, Image, ScrollView } from 'react-native';
+import { Text, View, Image, ScrollView, ImageBackground } from 'react-native';
 
 import useStyleLayoutMain from './useStyleLayoutMain';
 import Container from '../container/Container';
@@ -9,14 +9,14 @@ import List from '../list/List';
 import filterButtons from '../../assets/data/filterButtons';
 import FilterButton from '../../pages/cart/filterButton/FilterButton';
 
-const LayoutMain = ({ children, color }) => {
+const LayoutMain = ({ children, color, imageBackground }) => {
     const { name } = useRoute();
     const isShowButtons = name === ROUTES_CONFIG.cart.name;
 
 
     const styles = useStyleLayoutMain(color);
     return (
-        <View style={styles.layout}>
+        <ImageBackground source={imageBackground} style={styles.layout}>
             {isShowButtons && <View style={styles.listBox}>
                     <List data={filterButtons} Component={FilterButton} />
             </View>  }
@@ -26,7 +26,7 @@ const LayoutMain = ({ children, color }) => {
             <View style={styles.navigation}>
                 <Header />
             </View>
-        </View>
+        </ImageBackground>
     )
 }
 

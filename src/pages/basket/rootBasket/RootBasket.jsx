@@ -28,7 +28,7 @@ const RootBasket = () => {
 
   if (basketList.length > 0) {
     return (
-      <LayoutMain color={COLORS.backgroundSalad}>
+      <LayoutMain imageBackground={require('../../../assets/images/dev/bgc.png')}>
         <View style={styles.titleWrapper}>
           <Text style={styles.title}>Ваш заказ</Text>
         </View>
@@ -51,7 +51,7 @@ const RootBasket = () => {
     );
   } else {
     return (
-    <LayoutMain color={COLORS.backgroundSalad}>
+    <LayoutMain imageBackground={require('../../../assets/images/dev/bgc.png')}>
         <View style={styles.container}>
           <Image style={styles.image} source={require('../../../assets/images/decotarion/bags.png')}/>
           <View style={styles.titleWrapper}>

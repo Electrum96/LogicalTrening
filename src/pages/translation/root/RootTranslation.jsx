@@ -13,7 +13,7 @@ const RootTranslation = () => {
 
     const styles = useStyleRootTranslation();
     return (
-        <LayoutMain color={COLORS.backgroundSalad}>
+        <LayoutMain imageBackground={require('../../../assets/images/dev/bgc.png')}>
             <View style={styles.titleWrapper}>
                 <Text style={styles.title}>Спортивные трансляции</Text>
             </View>

@@ -1,4 +1,4 @@
-import { Text, View, Image, TextInput } from 'react-native';
+import { Text, View, Image, TextInput, ImageBackground } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import OvalButton from '../../components/ovalButton/OvalButton';
 
@@ -14,7 +14,7 @@ const ReservePage = () => {
 
     const styles = useStyleReservePage();
     return (
-        <View style={styles.contentWrapper}>
+        <ImageBackground source={require('../../assets/images/dev/bgc.png')} style={styles.contentWrapper}>
             <View style={styles.container}>
                 <View style={styles.titleBox}>
                     <Text style={styles.title}>Забронируйте Ваш столик </Text>
@@ -35,7 +35,7 @@ const ReservePage = () => {
                 <Header />
             </View>
             <View />
-        </View>
+        </ImageBackground>
 
     )
 }

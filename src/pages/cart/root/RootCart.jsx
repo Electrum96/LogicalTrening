@@ -18,7 +18,7 @@ const RootCart = () => {
  
   const styles = useStyleRootCart();
   return (
-    <LayoutMain color={COLORS.backgrounColor}>
+    <LayoutMain imageBackground={require('../../../assets/images/dev/common.png')}>
       <ScrollView contentContainerStyle={styles.listWrap}>
         <List data={filteredData} Component={ProductItem} />
       </ScrollView>
