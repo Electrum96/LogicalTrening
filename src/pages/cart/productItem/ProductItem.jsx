@@ -9,7 +9,7 @@ import { icon } from '@fortawesome/fontawesome-svg-core';
 import { COLORS } from '../../../assets/styles/variables';
 import Counter from '../../../components/counter/Counter';
 
-const ProductItem = ({ title, image, weight, price, id, inBasket, count }) => {
+const ProductItem = ({ title, image, weight, price, id, inBasket, count, desc, classTab }) => {
   const { add, remove } = productStore;
 
   const handlerRemove = () => remove(id);
@@ -21,7 +21,12 @@ const ProductItem = ({ title, image, weight, price, id, inBasket, count }) => {
       <Image style={styles.image} source={image} />
       <View style={styles.box}>
         <Text style={styles.title} numberOfLines={2} >{title}</Text>
-        <Text style={styles.weight} >{weight}г.</Text>
+        {classTab === 'Drinks' ?
+          <Text style={styles.weight} >{weight} мл.</Text>
+          :
+          <Text style={styles.weight} >{weight} г.</Text>}
+
+        <Text style={styles.desc} numberOfLines={1}>{desc}</Text>
 
         <View style={styles.footer}>
           <View style={styles.priceWrapper}>

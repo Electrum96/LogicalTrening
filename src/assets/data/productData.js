@@ -192,7 +192,7 @@ const PRODUCT_DATA = [
     classTab: 'Desert',
   },
   {
-    title: 'Апельсин-Клубника',
+    title: 'Апельсин и Клубника',
     desc: 'Сок апельсиновый, фреш лимонный, сироп Клубника, Фрустайл Апельсин, апельсин, мята, лёд',
     price: 210,
     image: require('../images/drinks/drink1.jpg'),
@@ -208,7 +208,7 @@ const PRODUCT_DATA = [
     classTab: 'Drinks',
   },
   {
-    title: 'Черника-Голубика',
+    title: 'Черника и Голубика',
     desc: 'Основа Черника-Голубика, сироп Смородина, сироп Лайм, фреш лимонный, содовая, лёд фраппе, черника свежемороженая',
     price: 270,
     image: require('../images/drinks/drink3.jpg'),

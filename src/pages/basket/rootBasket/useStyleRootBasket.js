@@ -20,7 +20,7 @@ function useStyleRootBasket() {
         },
 
         contentBox: {
-            padding: 15,
+            padding: 20,
             marginVertical: 10,
             height: '70%',
             backgroundColor: COLORS.backgrounColor,

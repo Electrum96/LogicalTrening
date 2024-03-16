@@ -4,7 +4,7 @@ import { COLORS } from '../../../assets/styles/variables';
 function useStyleProductItem() {
     const styles = StyleSheet.create({
         wrapper: {
-            height: 145,
+            height: 140,
             width: '100%',
             paddingHorizontal: 5,
             gap: 10,
@@ -30,6 +30,14 @@ function useStyleProductItem() {
             fontWeight: '700',
             color: COLORS.dark,
             fontSize: 20
+        },
+        desc: {
+            color: COLORS.grey,
+            fontSize: 15
+        },
+        weight: {
+            color: COLORS.grey,
+            fontSize: 15
         },
         footer: {
             flexDirection: 'row',
