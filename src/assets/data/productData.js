@@ -138,7 +138,7 @@ const PRODUCT_DATA = [
   {
     title: 'Брусничный тарт',
     desc: 'Песочное тесто, брусничный джем, ягоды брунсики',
-    price: 10,
+    price: 160,
     image: require('../images/sweets/desert2.jpg'),
     weight: 120,
     classTab: 'Desert',
@@ -154,7 +154,7 @@ const PRODUCT_DATA = [
   {
     title: 'Тарталетка с клубникой',
     desc: 'Песочное тесто, масляный крем, ягоды клубники',
-    price: 21,
+    price: 210,
     image: require('../images/sweets/desert4.jpeg'),
     weight: 200,
     classTab: 'Desert',
